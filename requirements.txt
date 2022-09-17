@@ -1,0 +1,6 @@
+requests~=2.27.1
+redditeasy~=4.0.0
+discord.py[voice]==1.7.3
+discord==1.7.3
+python-dotenv~=0.20.0
+pygelbooru==0.5.0
