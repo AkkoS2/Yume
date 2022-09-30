@@ -2,11 +2,11 @@
 
 <p align="center"> Yume is a brand new discord bot with the focus of being able to do a little of everything. </p>
 Currently in active development, Yume is entirely build with focus to work using only the new discord slash commands or application commands. With a vast variety of commands planned to be made in the near and far future, as a long plan development may be possible.
-<p >You can also see all the planned commands and their development status by simply clicking <a href="https://github.com/users/AkkoS2/projects/8/views/1"> here</a>! </p>
+<p align="left"> You can also see all the planned commands and their development status by simply clicking <a href="https://github.com/users/AkkoS2/projects/8/views/1"> here</a>! </p>
 
 <h2 align="center"> Selfhosting </h2>
 
-You are 100% allowed to have a selfhosted version of Yume under the following circumstances:
+<p align="left"> You are 100% allowed to have a selfhosted version of Yume under the following circumstances: </p>
 
 <ul>
     <li> Your self-hosted instance <strong>MUST</strong> be <strong>PRIVATE</strong>.
@@ -15,7 +15,7 @@ You are 100% allowed to have a selfhosted version of Yume under the following ci
     <li> Your self-hosted instance must not be listed on any sort of public bot listing.
 </ul>
 
-You are completly free to create as many forks of Yume you want!
+<p align="left"> You are completly free to create as many Yume's forks you want! </p>
 
 <h2 align="center"> WIKI </h2>
 
