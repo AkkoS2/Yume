@@ -19,12 +19,12 @@ You are completly free to create as many forks of Yume you want!
 
 <h2 align="center"> WIKI </h2>
 
-The Wiki is not planned to be made while at least 80% of the commands where done and working.
+<p align="center"> The Wiki is not planned to be made while at least 80% of the commands were done and working. </p>
 
 <h2 align="center"> Have a sugestion? </h2>
 
-This is my first project and, you can even say that this will be the start of my Github, so if you have any suggestions or ideas for new commands, you can told them to me and I will analyze then carefully.
-Yume will be builded as carefully as possible, so it can be used with zero worries. Thanks for the attention!
+<p> This is my first project and, you can even say that this will be the start of my Github, so if you have any suggestions or ideas for new commands, you can told them to me and I will analyze then carefully. </p>
+<p align="center"> Yume will be builded as carefully as possible, so it can be used with zero worries. Thanks for the attention! </p>
 
 <h2 align="center"> DISCLAIMER </h2>
 
