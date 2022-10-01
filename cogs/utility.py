@@ -119,7 +119,7 @@ class Info(commands.GroupCog, name='info'):
         info.add_field(name='Account created in: ', value=member.created_at.strftime(date))
         info.set_author(name=str(member), icon_url=member.avatar.url)
         info.set_thumbnail(url=member.avatar.url)
-        
+
         if len(member.roles) > 1:
             role_str = ', '.join([r.mention for r in member.roles][1:])
             info.add_field(name='Roles: [{}]'.format(len(member.roles) - 1), value=role_str, inline=False)
