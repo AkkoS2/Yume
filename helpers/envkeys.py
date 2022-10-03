@@ -19,3 +19,7 @@ def deepai_key():
 
 def app_id():
     return os.environ.get("APP_ID", None)
+
+
+def kawaii_red():
+    return os.environ.get("KAWAII_RED", None)

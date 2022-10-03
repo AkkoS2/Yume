@@ -4,6 +4,8 @@ from discord import app_commands
 from helpers import searchers
 import discord
 
+embed = discord.Embed(color=discord.Colour.random())
+
 
 # realiza a criação da classe cog
 class RolePlay(commands.GroupCog, name="rp"):
@@ -20,87 +22,152 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='hug', description='Give a hug to someone!')
     async def hug(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.roleplay_gif = 'hug'
-
-        hug = discord.Embed(color=discord.Colour.random())
-        hug.set_image(url=str(searchers.nekos_best()))
-        hug.set_footer(text='Just lovely!')
+        searchers.nekos_gif = 'hug'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text='Just lovely!')
 
         if user == interaction.user:
 
-            hug.set_author(name='Feeling lonely? Come here, Yume is gonna hug you ❤️')
-            await interaction.response.send_message(embed=hug)
+            embed.set_author(name='Feeling lonely? Come here, Yume is gonna hug you ❤️')
+            await interaction.response.send_message(embed=embed)
 
-        hug.set_author(name=f'{interaction.user.name} just hugged {user.name}!')
-        await interaction.response.send_message(embed=hug)
+        embed.set_author(name=f'{interaction.user.name} just hugged {user.name}!')
+        await interaction.response.send_message(embed=embed)
 
     # slap
     @app_commands.command(name='slap', description='Slaps someone')
     async def slap(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.roleplay_gif = 'slap'
-
-        slap = discord.Embed(color=discord.Colour.random())
-        slap.set_image(url=str(searchers.nekos_best()))
-        slap.set_footer(text='That was funny to watch... hehe~')
+        searchers.nekos_gif = 'slap'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text='That was funny to watch... hehe~')
 
         if user == interaction.user:
-            slap.set_author(name="If you insist... i'm so sorry...")
-            await interaction.response.send_message(embed=slap)
+            embed.set_author(name="If you insist... i'm so sorry...")
+            await interaction.response.send_message(embed=embed)
 
-        slap.set_author(name=f'{interaction.user.name} slapped {user.name}! I wonder if it hurts? hmm...')
-        await interaction.response.send_message(embed=slap)
+        embed.set_author(name=f'{interaction.user.name} slapped {user.name}! I wonder if it hurts? hmm...')
+        await interaction.response.send_message(embed=embed)
 
     # kiss
     @app_commands.command(name='kiss', description='Give a kiss to someone')
     async def kiss(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.roleplay_gif = 'kiss'
-
-        kiss = discord.Embed(color=discord.Colour.random())
-        kiss.set_image(url=str(searchers.nekos_best()))
-        kiss.set_footer(text='it was really cute!')
+        searchers.nekos_gif = 'kiss'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text='it was really cute!')
 
         if user == interaction.user:
-            kiss.set_author(name="Awwnn... Come here, Yume is gonna give you a kiss!")
-            await interaction.response.send_message(embed=kiss)
+            embed.set_author(name="Awwnn... Come here, Yume is gonna give you a kiss!")
+            await interaction.response.send_message(embed=embed)
 
-        kiss.set_author(name=f'{interaction.user.name} just kissed {user.name}! In front of everyone!')
-        await interaction.response.send_message(embed=kiss)
+        embed.set_author(name=f'{interaction.user.name} just kissed {user.name}! In front of everyone!')
+        await interaction.response.send_message(embed=embed)
 
     # pat
     @app_commands.command(name='pat', description='You can pat someone')
     async def pat(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.roleplay_gif = 'pat'
-
-        pat = discord.Embed(color=discord.Colour.random())
-        pat.set_image(url=str(searchers.nekos_best()))
-        pat.set_footer(text='Everyone should receive a little pat!')
+        searchers.nekos_gif = 'pat'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text='Everyone should receive a little pat!')
 
         if user == interaction.user:
-            pat.set_author(name="Seems that you are lonely... I'm gonna pat you, don't worry!")
-            await interaction.response.send_message(embed=pat)
+            embed.set_author(name="Seems that you are lonely... I'm gonna pat you, don't worry!")
+            await interaction.response.send_message(embed=embed)
 
-        pat.set_author(name=f'{interaction.user.name} just patted {user.name}! ❤️')
-        await interaction.response.send_message(embed=pat)
+        embed.set_author(name=f'{interaction.user.name} just patted {user.name}! ❤️')
+        await interaction.response.send_message(embed=embed)
 
-    # lick
-    @app_commands.command(name='lick', description='Licks the chosen user')
-    async def lick(self, interaction: discord.Interaction, *, user: discord.Member):
+    # bite
+    @app_commands.command(name='bite', description='Bites someone, just make sure to not hurt them')
+    async def bite(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.roleplay_gif = 'lick'
-
-        lick = discord.Embed(color=discord.Colour.random())
-        lick.set_image(url=str(searchers.nekos_best()))
-        lick.set_footer(text='I wonder how it tastes...')
+        searchers.nekos_gif = 'bite'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text='Does it hurt? Maybe it was too strong?')
 
         if user == interaction.user:
-            lick.set_author(name="I wasn't wanting to lick you... You... taste funny, are you taking showers?")
-            await interaction.response.send_message('the command is not ready :p', ephemeral=True)
+            embed.set_author(name="I'm gonna bite you then. Is here a good place?")
+            await interaction.response.send_message(embed=embed)
 
-        lick.set_author(name=f'{interaction.user.name} licked {user.name}! why...?')
-        await interaction.response.send_message('the command is not ready :p', ephemeral=True)
+        embed.set_author(name=f'{interaction.user.name} has bitten {user.name}, I wonder why?')
+        await interaction.response.send_message(embed=embed)
+
+    # stare
+    @app_commands.command(name='stare', description='Just... stare at someone for no reason')
+    async def stare(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.nekos_gif = 'stare'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text='Careful to not stare too much, they may notice it...')
+
+        if user == interaction.user:
+            embed.set_author(name="I'm gonna stare at you then... please don't look away!")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is staring at {user.name}, strange...')
+        await interaction.response.send_message(embed=embed)
+
+    # shoot
+    @app_commands.command(name='shoot', description='Shoots a user, careful to not kill them')
+    async def shoot(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.nekos_gif = 'shoot'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text="Oh my God, are you okay? I'm calling a ambulance, stay strong, please!")
+
+        if user == interaction.user:
+            embed.set_author(name="I wasn't wanting to shoot you but, that might be.... hehe~")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} just shot {user.name}, should we call the police?')
+        await interaction.response.send_message(embed=embed)
+
+    # punch
+    @app_commands.command(name='punch', description='Punches someone!')
+    async def punch(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.nekos_gif = 'punch'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text='That actually might have been painful, I guess?')
+
+        if user == interaction.user:
+            embed.set_author(name="I usually don't like punching people, but since you asked so nicely~")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} punched {user.name}, how strong was it..?')
+        await interaction.response.send_message(embed=embed)
+
+    # poke
+    @app_commands.command(name='poke', description='Pokes another user, if you want to')
+    async def poke(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.nekos_gif = 'poke'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text='Is it annoying to keep poking people?')
+
+        if user == interaction.user:
+            embed.set_author(name='Yume likes poking others, come here!!!')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} poked {user.name}. I want to poke them too!')
+        await interaction.response.send_message(embed=embed)
+
+    # cuddle
+    @app_commands.command(name='cuddle', description='Stop being annoying, cuddle with someone instead')
+    async def cuddle(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.nekos_gif = 'cuddle'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text="That was one of the most cute things I've ever seen")
+
+        if user == interaction.user:
+            embed.set_author(name='Seems like you are always alone, huh? come here, cutie!')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is cuddling with {user.name}, do not interrupt them!')
+        await interaction.response.send_message(embed=embed)
 
 
 # registra as classes no cog
