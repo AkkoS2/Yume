@@ -169,6 +169,51 @@ class RolePlay(commands.GroupCog, name="rp"):
         embed.set_author(name=f'{interaction.user.name} is cuddling with {user.name}, do not interrupt them!')
         await interaction.response.send_message(embed=embed)
 
+    # lick
+    @app_commands.command(name='lick', description='Licks another user or even yourself')
+    async def lick(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.kawaii_gif = 'lick'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text='How does it taste?')
+
+        if user == interaction.user:
+            embed.set_author(name="I really didn't want to lick you, but since you asked for it...")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is licking {user.name}, I wonder why.... Does it taste good?')
+        await interaction.response.send_message(embed=embed)
+
+    # stomp
+    @app_commands.command(name='stomp', description='Stomps another user, be careful to not hurt them')
+    async def stomp(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.kawaii_gif = 'stomp'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="Looks like it's hurting... but it's funny to watch~")
+
+        if user == interaction.user:
+            embed.set_author(name="You asked for it, come here! and don't even think of running away~")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} stomped {user.name}, maybe they liked it...')
+        await interaction.response.send_message(embed=embed)
+
+    # stomp
+    @app_commands.command(name='boop', description="boop another user, that's it")
+    async def stomp(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.kawaii_gif = 'boop'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="Hey~ this is funny hehe~")
+
+        if user == interaction.user:
+            embed.set_author(name="I like doing this to you, it's funny and cute!")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} has boop {user.name}, this is cute, please continue!')
+        await interaction.response.send_message(embed=embed)
+
 
 # registra as classes no cog
 async def setup(yume: commands.AutoShardedBot) -> None:
