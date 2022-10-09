@@ -78,7 +78,7 @@ class Actions(commands.GroupCog, name='action'):
         await interaction.response.send_message(embed=embed)
 
     # dance
-    @app_commands.command(name='dance',description='Looks like you like dancing...')
+    @app_commands.command(name='dance', description='Looks like you like dancing...')
     async def dance(self, interaction: discord.Interaction, user: discord.Member = None):
 
         searchers.nekos_gif = 'dance'
