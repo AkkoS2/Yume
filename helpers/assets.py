@@ -15,3 +15,6 @@ class Buttons:
     view.add_item(ok_button)
     view.add_item(next_button)
     view.add_item(random_button)
+
+
+embed = discord.Embed(color=discord.Colour.random())

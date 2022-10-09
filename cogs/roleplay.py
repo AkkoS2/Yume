@@ -1,10 +1,9 @@
 # bibliotecas
 from discord.ext import commands
 from discord import app_commands
+from helpers.assets import embed
 from helpers import searchers
 import discord
-
-embed = discord.Embed(color=discord.Colour.random())
 
 
 # realiza a criação da classe cog
@@ -27,7 +26,6 @@ class RolePlay(commands.GroupCog, name="rp"):
         embed.set_footer(text='Just lovely!')
 
         if user == interaction.user:
-
             embed.set_author(name='Feeling lonely? Come here, Yume is gonna hug you ❤️')
             await interaction.response.send_message(embed=embed)
 
@@ -181,6 +179,10 @@ class RolePlay(commands.GroupCog, name="rp"):
             embed.set_author(name="I really didn't want to lick you, but since you asked for it...")
             await interaction.response.send_message(embed=embed)
 
+        if user.id == 944414497966264321:
+            embed.set_author(name="Do you really like licking metal? You can keep licking then...")
+            await interaction.response.send_message(embed=embed)
+
         embed.set_author(name=f'{interaction.user.name} is licking {user.name}, I wonder why.... Does it taste good?')
         await interaction.response.send_message(embed=embed)
 
@@ -199,7 +201,7 @@ class RolePlay(commands.GroupCog, name="rp"):
         embed.set_author(name=f'{interaction.user.name} stomped {user.name}, maybe they liked it...')
         await interaction.response.send_message(embed=embed)
 
-    # stomp
+    # boop
     @app_commands.command(name='boop', description="boop another user, that's it")
     async def stomp(self, interaction: discord.Interaction, *, user: discord.Member):
 
@@ -208,7 +210,7 @@ class RolePlay(commands.GroupCog, name="rp"):
         embed.set_footer(text="Hey~ this is funny hehe~")
 
         if user == interaction.user:
-            embed.set_author(name="I like doing this to you, it's funny and cute!")
+            embed.set_author(name="I like doing this, it's funny and cute!")
             await interaction.response.send_message(embed=embed)
 
         embed.set_author(name=f'{interaction.user.name} has boop {user.name}, this is cute, please continue!')
