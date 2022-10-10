@@ -4,6 +4,8 @@
 Currently in active development, Yume is entirely build with focus to work using only the new discord slash commands or application commands. With a vast variety of commands planned to be made in the near and far future, as a long plan development may be possible.
 <p align="left"> You can also see all the planned commands and their development status by simply clicking <a href="https://github.com/users/AkkoS2/projects/8/views/1"> here</a>! </p>
 
+![](https://geps.dev/progress/10)
+
 <h2 align="center"> Selfhosting </h2>
 
 <p align="left"> You are 100% allowed to have a selfhosted version of Yume under the following circumstances: </p>
@@ -17,8 +19,6 @@ Currently in active development, Yume is entirely build with focus to work using
 <h2 align="center"> WIKI </h2>
 
 <p align="center"> The Wiki is not planned to be made while at least 80% of the commands were done and working. </p>
-<p align="center"> Current Progress </p>
-![](https://geps.dev/progress/27)
 
 <h2 align="center"> Have a sugestion? </h2>
 
