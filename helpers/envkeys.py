@@ -15,3 +15,7 @@ def app_id():
 
 def kawaii_red():
     return os.environ.get("KAWAII_RED", None)
+
+
+def tenor_key():
+    return os.environ.get("TENOR_KEY", None)

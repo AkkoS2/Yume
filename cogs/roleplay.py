@@ -203,7 +203,7 @@ class RolePlay(commands.GroupCog, name="rp"):
 
     # boop
     @app_commands.command(name='boop', description="boop another user, that's it")
-    async def stomp(self, interaction: discord.Interaction, *, user: discord.Member):
+    async def boop(self, interaction: discord.Interaction, *, user: discord.Member):
 
         searchers.kawaii_gif = 'boop'
         embed.set_image(url=str(searchers.kawaii_api()))
@@ -214,6 +214,36 @@ class RolePlay(commands.GroupCog, name="rp"):
             await interaction.response.send_message(embed=embed)
 
         embed.set_author(name=f'{interaction.user.name} has boop {user.name}, this is cute, please continue!')
+        await interaction.response.send_message(embed=embed)
+
+    # glare
+    @app_commands.command(name='glare', description='why are you glaring at me?')
+    async def glare(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.tenor_gif = 'anime glare'
+        embed.set_image(url=str(searchers.tenor()))
+        embed.set_footer(text="Someone's glaring so much~")
+
+        if user == interaction.user:
+            embed.set_author(name="Yume is going to glare at you, hope you don't mind~")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is glaring at {user.name} so intensely!')
+        await interaction.response.send_message(embed=embed)
+
+    # spank
+    @app_commands.command(name='spank', description='spanks someone!')
+    async def spank(self, interaction: discord.Interaction, *, user: discord.Member):
+
+        searchers.tenor_gif = 'anime spank'
+        embed.set_image(url=str(searchers.tenor()))
+        embed.set_footer(text="Looks like someone's has been naughty...")
+
+        if user == interaction.user:
+            embed.set_author(name="This will probably hurt, i'm sorry")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'I wonder why {interaction.user.name} is spanking {user.name}...')
         await interaction.response.send_message(embed=embed)
 
 

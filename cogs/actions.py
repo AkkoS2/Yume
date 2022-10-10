@@ -92,6 +92,186 @@ class Actions(commands.GroupCog, name='action'):
         embed.set_author(name=f'{interaction.user.name} is dancing with {user.name}, how cute!~')
         await interaction.response.send_message(embed=embed)
 
+    # shame
+    @app_commands.command(name='shame', description="i'm ashamed... and it's somebody's fault.")
+    async def shame(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.kawaii_gif = 'shame'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="that's kinda cringe, not gonna lie")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'{interaction.user.name} is ashamed with himself!')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is ashamed about {user.name}, why?')
+        await interaction.response.send_message(embed=embed)
+
+    # facepalm
+    @app_commands.command(name='facepalm', description="facepalm because that was dumb")
+    async def facepalm(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.kawaii_gif = 'facepalm'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="that's uh... nevermind...")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'sigh....')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} facepalmed because of {user.name}!')
+        await interaction.response.send_message(embed=embed)
+
+    # laugh
+    @app_commands.command(name='laugh', description="everyone likes to laugh")
+    async def laugh(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.kawaii_gif = 'laugh'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="hehe~")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'You know, laughing alone because of nothing is kinda creepy')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is laughing with {user.name}, did something funny happened?')
+        await interaction.response.send_message(embed=embed)
+
+    # pout
+    @app_commands.command(name='pout', description="hmpf")
+    async def pout(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.nekos_gif = 'pout'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text="I'm not talking, hmpf!")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'Did something happened with {interaction.user.name}?')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{user.name} is making {interaction.user.name} being a pouty!')
+        await interaction.response.send_message(embed=embed)
+
+    # purr
+    @app_commands.command(name='purr', description="nyaa~")
+    async def purr(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.kawaii_gif = 'purr'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="nyaa nyaan~")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'Do you think you are a little kitty, huh?')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is purring at {user.name}....')
+        await interaction.response.send_message(embed=embed)
+
+    # shrug
+    @app_commands.command(name='shrug', description="i have no idea")
+    async def shrug(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.nekos_gif = 'shrug'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text="i don't know, why?")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'Hey look! {interaction.user.name} is shrugging!')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} started shrugging at {user.name}, is there a reason?')
+        await interaction.response.send_message(embed=embed)
+
+    # smile
+    @app_commands.command(name='smile', description="happy times, hehe")
+    async def smile(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.nekos_gif = 'smile'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text="Happy times are so comfy~")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'You should always smile, {interaction.user.name}!')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is smiling at {user.name}, how cute~')
+        await interaction.response.send_message(embed=embed)
+
+    # die
+    @app_commands.command(name='die', description="you're ded")
+    async def die(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.kawaii_gif = 'die'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="Hey, I think this person just died, what do?")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'{interaction.user.name} died, somebody call an ambule!')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{user.name} just made {interaction.user.name} die, how mean!')
+        await interaction.response.send_message(embed=embed)
+
+    # wiggle
+    @app_commands.command(name='wiggle', description="you like to wiggle")
+    async def highfive(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.kawaii_gif = 'wiggle'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="Wiggle again! Please!")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f"It seems that {interaction.user.name} likes to wiggle")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is wiggling with {user.name}, so cute!')
+        await interaction.response.send_message(embed=embed)
+
+    # cry
+    @app_commands.command(name='cry', description="sobs")
+    async def cry(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.nekos_gif = 'cry'
+        embed.set_image(url=str(searchers.nekos_best()))
+        embed.set_footer(text="What happened? Why are you crying?")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f"Why are you crying, {interaction.user.name} did something happened?")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{user.name} is mean and made {interaction.user.name} cry')
+        await interaction.response.send_message(embed=embed)
+
+    # run
+    @app_commands.command(name='run', description="let's run away")
+    async def run(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.kawaii_gif = 'run'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="Faster! Faster! You're too slow!")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'Why are you running away, {interaction.user.name}?')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is running away from {user.name}, maybe I should run away too?')
+        await interaction.response.send_message(embed=embed)
+
+    # highfive
+    @app_commands.command(name='highfive', description="high fives, and more high fives")
+    async def highfive(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.kawaii_gif = 'highfive'
+        embed.set_image(url=str(searchers.kawaii_api()))
+        embed.set_footer(text="High Five! Do it again!")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f'Yume is going to do a high five with you, come here!')
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} did a high five with {user.name}!')
+        await interaction.response.send_message(embed=embed)
+
 
 # registra as classes no cog
 async def setup(yume: commands.AutoShardedBot) -> None:
