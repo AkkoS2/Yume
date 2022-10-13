@@ -46,6 +46,7 @@ class Utility(commands.Cog):
         await interaction.response.send_message(embed=avatar)
 
     # waifu2x
+    @app_commands.checks.has_permissions(attach_files=True)
     @app_commands.command(name='waifu2x', description="Utilizes AI to reduce image noise and improve quality")
     async def waifu2x(self, interaction: discord.Interaction, *, image: discord.Attachment):
 
@@ -70,6 +71,7 @@ class Utility(commands.Cog):
             await interaction.delete_original_response()
 
     # colorize
+    @app_commands.checks.has_permissions(attach_files=True)
     @app_commands.command(name='colorize', description="Utilizes AI to colorize a black and white image")
     async def colorize(self, interaction: discord.Interaction, *, image: discord.Attachment):
 
@@ -139,8 +141,8 @@ class Info(commands.GroupCog, name='info'):
         info = discord.Embed(description=f"{interaction.guild.name}'s Info", color=discord.Colour.random())
         info.set_author(name=str(interaction.guild.name), icon_url=interaction.guild.icon.url)
         info.set_thumbnail(url=interaction.guild.icon.url)
-        info.add_field(name=f'Voice Channels: ', value=f'{len(interaction.guild.text_channels)} channels.', inline=True)
-        info.add_field(name=f'Text Channels: ', value=f'{len(interaction.guild.voice_channels)} channels.', inline=True)
+        info.add_field(name=f'Voice Channels: ', value=f'{len(interaction.guild.voice_channels)} channels.', inline=True)
+        info.add_field(name=f'Text Channels: ', value=f'{len(interaction.guild.text_channels)} channels.', inline=True)
         info.add_field(name=f'Member Count: ', value=f'{interaction.guild.member_count} users.', inline=True)
         info.add_field(name=f'Created in: ', value=interaction.guild.created_at.strftime(date), inline=True)
         info.add_field(name=f'Server Owner: ', value=f'{interaction.guild.owner}', inline=False)
