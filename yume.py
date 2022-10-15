@@ -18,7 +18,7 @@ class YumeBot(commands.AutoShardedBot):
         intents.members = True
         load_dotenv()
 
-        super().__init__(command_prefix='y!', case_insensitive=True, intents=intents, application_id=app_id(), shards=2)
+        super().__init__(command_prefix='y!', case_insensitive=True, intents=intents, application_id=app_id(), shards=3)
 
     # envia uma mensagem de erro caso o comando com prefixo não exista
     async def on_command_error(self, ctx, error):
