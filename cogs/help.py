@@ -34,7 +34,13 @@ class Help(commands.Cog):
     async def help(self, interaction: discord.Interaction, category: discord.app_commands.Choice[int], *, dm: bool):
 
         # dictionary = {1: 'fun', 2: 'image', 3: 'moderation', 4: 'music', 5: 'nsfw', 6: 'roleplay', 7: 'actions', 8: 'search',
-        #               9: 'utility', 10: 'mathematics'}
+        #              9: 'utility', 10: 'mathematics'}
+
+        # if dm is True:
+        #    await interaction.user.send(embed=dictionary[category])
+        #    await interaction.response.send_message('dot', ephemeral=True)
+        # else:
+        #    await interaction.response.send_message(embed=dictionary[category], ephemeral=True)
 
         if category.value == 1:
             if dm is True:

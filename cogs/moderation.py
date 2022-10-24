@@ -1,6 +1,7 @@
 # bibliotecas
 from discord.ext import commands
 from discord import app_commands
+import asyncio
 import discord
 
 
@@ -23,11 +24,13 @@ class Moderation(commands.Cog):
             await interaction.response.send_message("You need to choose something between 1 and 100, cutie", ephemeral=True)
 
         if amount == 1:
-            await interaction.channel.purge(limit=amount,)
-            await interaction.response.send_message(f"I've just deleted **{amount}** message.")
+            await interaction.channel.purge(limit=amount)
+            await interaction.response.send_message(f"I've just deleted **{amount}** message.", ephemeral=True)
 
-        await interaction.response.send_message(f"I'm going to delete {amount} messages, as you asked")
+        await interaction.response.defer(ephemeral=True)
         await interaction.channel.purge(limit=amount + 1)
+        await asyncio.sleep(3)
+        await interaction.followup.send(f"I've deleted **{amount}** messages, just as you asked!")
 
     # nuke
     @app_commands.checks.has_permissions(manage_messages=True, manage_channels=True)
