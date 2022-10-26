@@ -35,6 +35,4 @@ The Wiki is not planned to be made while at least 80% of the commands where done
 This is my first project and, you can even say that this will be the start of my Github, so if you have any suggestions or ideas for new commands, you can told them to me and I will analyze then carefully.
 Yume will be builded as carefully as possible, so it can be used with zero worries. Thanks for the attention!
 
-<h2 align="center"> Special Thanks </h2>
-
-To <a href="https://github.com/reggi">Thomas Reggi</a> for allowing me to use his fortune cookies list, Thank you!
+<h6>Thanks to <a href="https://github.com/reggi">Thomas Reggi</a> for allowing me to use his fortune cookies list.</h6>
