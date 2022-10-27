@@ -1,22 +1,20 @@
 def status():
 
-    yume_status = ['dreaming', 'in a dream']
+    yume_status = ['dreaming', 'with dreams']
     return yume_status
 
 
 def dont_exist():
 
-    notfound = ['Acho que você escreveu algo errado!', 'Não sei o que é isso.', 'Ainda não posso fazer isso.']
+    notfound = ['what?', 'Yume only has slash commands, silly~', "I cant do that"]
     return notfound
 
 
-def fortune():
+def eightball():
 
-    fortuneteller = ['Com certeza.', 'Está decidido.', 'Sem sombra de dúvidas!', 'Sim, definitivamente.',
-                     'Pode contar com isso.', 'Sim.', 'Sinais dizem que sim.', 'Não.', 'Melhor não contar com isso.',
-                     'Pergunte mais tarde...', 'Minhas fontes de dizem que não.', 'Muito duvidoso...',
-                     'Pergunte novamente...', 'Imagine se isso fosse verdade...',
-                     'Oi? não consegui ouvir direito, poderia repetir?', 'Pode repetir? Não entendi.'
-                     'Não sei.', 'Desculpa, não posso prever nada agora...', 'Você é estranho.', 'Talvez?']
-    return fortuneteller
+    answers = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes definitely.", "You may rely on it.",
+               "As I see it, yes.", "Most likely", "Outlook good.", "Yes.", "Signs point to yes.", "Reply hazy, try again.",
+               "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", "Don't count on it.",
+               "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful"]
+    return answers
 

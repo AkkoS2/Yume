@@ -54,6 +54,20 @@ class Mathematics(commands.GroupCog, name='math'):
         result = math.factorial(number)
         await interaction.response.send_message(f"I've done the maths and, the result is: {result}")
 
+    # square root
+    @app_commands.command(name='root', description='Gets you the square root of a real number!')
+    async def root(self, interaction: discord.Interaction, *, number: int):
+
+        try:
+            if number < 0:
+                await interaction.response.send_message(f"I'm only doing this with a positive number, okay?", ephemeral=True)
+
+            result = math.sqrt(number)
+            await interaction.response.send_message(f"I've done with the maths and the result is: {result}, i think?")
+
+        except ValueError:
+            await interaction.response.send_message(f"Looks like this number doesn't have a square root")
+
 
 # registra a classe cog
 async def setup(yume: commands.AutoShardedBot) -> None:

@@ -1,7 +1,9 @@
 # bibliotecas
+from helpers.texts import eightball
 from discord.ext import commands
 from discord import app_commands
 from helpers.assets import embed
+from uwuipy import uwuipy
 import discord
 import random
 
@@ -28,6 +30,20 @@ class Fun(commands.Cog):
         embed.set_image(url='attachment://cookie.gif')
         embed.set_footer(text="This is what the cookie said to Yume!")
         await interaction.response.send_message(embed=embed, file=cookie)
+
+    # Uwuify
+    @app_commands.command(name='uwuify', description='it makes you s-s-speak w-wike (˘ε˘) t-t-t-this?!?!')
+    async def uwuify(self, interaction: discord.Interaction, *, phrase: str):
+
+        uwu = uwuipy(None, 0.3, 0.3, 0.2, 1)
+        await interaction.response.send_message(uwu.uwuify(phrase))
+
+    # 8ball
+    @app_commands.command(name='8ball', description='let the 8 ball gives you a answer!')
+    async def eightball(self, interaction: discord.Interaction, *, question: str):
+
+        answer = random.choice(eightball())
+        await interaction.response.send_message(answer)
 
 
 # registra as classes no cog

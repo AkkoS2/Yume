@@ -5,3 +5,4 @@ requests==2.28.1
 pillow==9.2.0
 booru==1.0.15
 hmtai==3.2.0
+uwuipy==0.1.4
