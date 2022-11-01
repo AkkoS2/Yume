@@ -35,4 +35,18 @@ The Wiki is not planned to be made while at least 80% of the commands where done
 This is my first project and, you can even say that this will be the start of my Github, so if you have any suggestions or ideas for new commands, you can told them to me and I will analyze then carefully.
 Yume will be builded as carefully as possible, so it can be used with zero worries. Thanks for the attention!
 
+<h2 align="center"> Current Progress </h2>
+
+https://progress-bar.dev/46/
+
+<ul>
+    <li> Commands Completed: 70
+    <li> To-Do Commands: 81
+    <li> Not Necessary Anymore: 4
+    <li> Implemented by Discord: 5
+    <li> Discarded Commands: 5
+    <li> Total: 165 (151)
+</ul>
+
+
 <h6>Thanks to <a href="https://github.com/reggi">Thomas Reggi</a> for allowing me to use his fortune cookies list.</h6>
