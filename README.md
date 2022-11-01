@@ -37,8 +37,6 @@ Yume will be builded as carefully as possible, so it can be used with zero worri
 
 <h2 align="center"> Current Progress </h2>
 
-https://progress-bar.dev/46/
-
 <ul>
     <li> Commands Completed: 70
     <li> To-Do Commands: 81
