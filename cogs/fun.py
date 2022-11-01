@@ -45,6 +45,21 @@ class Fun(commands.Cog):
         answer = random.choice(eightball())
         await interaction.response.send_message(answer)
 
+    # Vay Hek
+    @app_commands.command(name='vayhek', description='Why are these fools still breathing my air?!?!')
+    async def vayhek(self, interaction: discord.Interaction):
+
+        vay = discord.File('./media/Vay_Hek.mp4', filename='Vay_Hek.mp4')
+        hek = 'WHY ARE THESE FOOLS STILL BREATHING MY AIR?!?!?!?!'
+        await interaction.response.send_message(hek, file=vay)
+
+    # SoonTM
+    @app_commands.command(name='soon', description='SoonTM')
+    async def soon(self, interaction: discord.Interaction):
+
+        soontm = discord.File('./media/soonTM.jpg', filename='soonTM.jpg')
+        await interaction.response.send_message('soon™', file=soontm)
+
 
 # registra as classes no cog
 async def setup(yume: commands.AutoShardedBot) -> None:

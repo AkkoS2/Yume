@@ -4,6 +4,8 @@ from discord import app_commands
 from helpers.assets import embed
 from helpers import searchers
 import discord
+import random
+import json
 
 
 # realiza a criação da classe cog
@@ -270,6 +272,100 @@ class Actions(commands.GroupCog, name='action'):
             await interaction.response.send_message(embed=embed)
 
         embed.set_author(name=f'{interaction.user.name} did a high five with {user.name}!')
+        await interaction.response.send_message(embed=embed)
+
+    # arrest
+    @app_commands.command(name='arrest', description="Let's arrest someone!")
+    async def arrest(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        f = open('./helpers/urlgifs.json')
+        data = json.load(f)
+
+        embed.set_image(url=str(data['gifs']['arrest']['urls'][random.randint(0, 7)]))
+        embed.set_footer(text="Ohh! So you're our new guest at the prison??")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f"You're under arrest, do not resist!")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} just arrested {user.name}, why??')
+        await interaction.response.send_message(embed=embed)
+
+    # greet
+    @app_commands.command(name='greet', description="Greets someone, that's it")
+    async def greet(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        f = open('./helpers/urlgifs.json')
+        data = json.load(f)
+
+        embed.set_image(url=str(data['gifs']['greet']['urls'][random.randint(0, 9)]))
+        embed.set_footer(text='Hello there!!')
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f"You wanted to be greeted, huh? Then I'm gonna do it~")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} greeted {user.name}, so nice to see it!!')
+        await interaction.response.send_message(embed=embed)
+
+    # cheer
+    @app_commands.command(name='cheer', description='Do you want to cheer something or someone?')
+    async def cheer(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.tenor_gif = 'cheer anime'
+        embed.set_image(url=str(searchers.tenor()))
+        embed.set_footer(text="Let's all do it together next time!")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f"Since you want this, I'm gonna do it!")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'Look! {interaction.user.name} is cheering with {user.name}!')
+        await interaction.response.send_message(embed=embed)
+
+    # sad
+    @app_commands.command(name='sad', description='Be sad at someone or because of someone :c')
+    async def sad(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.tenor_gif = 'sad anime'
+        embed.set_image(url=str(searchers.tenor()))
+        embed.set_footer(text="I Wonder what happened...")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f"Did something happened? Are you alright?")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'Perhaps {user.name} made {interaction.user.name} sad?')
+        await interaction.response.send_message(embed=embed)
+
+    # shy
+    @app_commands.command(name='shy', description="Are you shy?? That's adorable...")
+    async def shy(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.tenor_gif = 'shy anime'
+        embed.set_image(url=str(searchers.tenor()))
+        embed.set_footer(text="You're so cute when you are shy~")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f"Did you just made yourself shy about yourself? How cute~")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'{interaction.user.name} is acting shy in front of {user.name}!')
+        await interaction.response.send_message(embed=embed)
+
+    # wag
+    @app_commands.command(name='wag', description='Wanna wag at someone? I can help!')
+    async def wag(self, interaction: discord.Interaction, user: discord.Member = None):
+
+        searchers.tenor_gif = 'wag anime'
+        embed.set_image(url=str(searchers.tenor()))
+        embed.set_footer(text="That's.... cute....")
+
+        if user is None or user == interaction.user:
+            embed.set_author(name=f"Why are you wagging at yourself?")
+            await interaction.response.send_message(embed=embed)
+
+        embed.set_author(name=f'Everyone Look! {interaction.user.name} is wagging at {user.name}!')
         await interaction.response.send_message(embed=embed)
 
 
