@@ -25,8 +25,8 @@ The Wiki is not planned to be made while at least 80% of the commands where done
 <h2 align="center"> Current Progress </h2>
 
 <ul>
-    <li> Commands Completed: 70
-    <li> To-Do Commands: 81
+    <li> Commands Completed: 72
+    <li> To-Do Commands: 79
     <li> Not Necessary Anymore: 4
     <li> Implemented by Discord: 5
     <li> Discarded Commands: 5
