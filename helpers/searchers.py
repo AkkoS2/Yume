@@ -1,11 +1,13 @@
 # bibliotecas
 from helpers.envkeys import kawaii_red, tenor_key
 import requests
+import aiohttp
 import random
 
 nekos_gif = None
 kawaii_gif = None
 tenor_gif = None
+sub_reddit = None
 
 
 # nekos.best
@@ -57,3 +59,14 @@ def tenor():
 
 
 # reddit search
+async def reddit_search():
+    async with aiohttp.ClientSession() as cs:
+        async with cs.get(f"https://reddit.com/r/{sub_reddit}.json") as r:
+            data = await r.json()
+
+        if data['data']['children'][random.randint(0, 25)]['data']['over_18'] is True:
+
+            return "that's lewd"
+
+        return "That's safe!"
+        # print(data['data']['children'][random.randint(0, 25)]['data']['url'])

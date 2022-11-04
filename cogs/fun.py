@@ -5,7 +5,9 @@ from discord import app_commands
 from helpers.assets import embed
 from uwuipy import uwuipy
 import discord
+import Joking
 import random
+import json
 
 
 # realiza a criação da classe cog
@@ -59,6 +61,43 @@ class Fun(commands.Cog):
 
         soontm = discord.File('./media/soonTM.jpg', filename='soonTM.jpg')
         await interaction.response.send_message('soon™', file=soontm)
+
+    # Jokes
+    @app_commands.command(name='joke', description="I'll tell you a random dad joke!")
+    async def joke(self, interaction: discord.Interaction):
+
+        await interaction.response.send_message(Joking.random_dad_joke())
+
+    # Coin
+    @app_commands.choices(side=[
+        discord.app_commands.Choice(name='Heads', value='heads'),
+        discord.app_commands.Choice(name='Tails', value='tails')
+    ])
+    @app_commands.command(name='coin', description="I'm gonna toss a coin, you will try to guess wich side it landed!")
+    async def coin(self, interaction: discord.Interaction, side: discord.app_commands.Choice[str]):
+
+        value = random.randint(0, 100)
+        toss = 'heads', 'tails'
+        result = random.choice(toss)
+        coin = discord.File('./media/Coin.gif', filename='Coin.gif')
+
+        f = open('./helpers/urlgifs.json')
+        data = json.load(f)
+
+        if value == 100:
+            embed.set_author(name='The result is... Middle!! What??')
+            embed.set_image(url='attachment://coin.gif')
+            await interaction.response.send_message(embed=embed, file=coin)
+
+        if side.value.lower() == result:
+            embed.set_author(name=f'And the result is.... {result.upper()}! Congratulations!!')
+            embed.set_image(url=str(data['gifs']['toss']['urls'][random.randint(0, 3)]))
+            await interaction.response.send_message(embed=embed)
+
+        else:
+            embed.set_author(name=f"Uhh... Looks like you're wrong... The result was {result.upper()}")
+            embed.set_image(url=str(data['gifs']['toss']['urls'][random.randint(0, 3)]))
+            await interaction.response.send_message(embed=embed)
 
 
 # registra as classes no cog
