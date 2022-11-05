@@ -64,9 +64,17 @@ async def reddit_search():
         async with cs.get(f"https://reddit.com/r/{sub_reddit}.json") as r:
             data = await r.json()
 
-        if data['data']['children'][random.randint(0, 25)]['data']['over_18'] is True:
+        choice = random.randint(0, 25)
+        if 'is_gallery' in data['data']['children'][choice]['data']:
 
-            return "that's lewd"
+            pic_id = data['data']['children'][choice]['data']['gallery_data']['items'][0]['media_id']
+            print('got id')
+            img_type = data['data']['children'][choice]['data']['media_metadata'][pic_id]['m']
+            extension = '.' + img_type[-3:]
+            print(extension)
+
+        if data['data']['children'][choice]['data']['over_18'] is True:
+            print(data['data']['children'][choice]['data']['url'])
+            return "that's not safe"
 
         return "That's safe!"
-        # print(data['data']['children'][random.randint(0, 25)]['data']['url'])

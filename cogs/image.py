@@ -20,6 +20,10 @@ class Image(commands.Cog):
     async def reddit(self, interaction: discord.Interaction, *, subreddit: str):
 
         searchers.sub_reddit = str(subreddit)
+        if interaction.channel.is_nsfw():
+            print('chat is nsfw')
+            await interaction.response.send_message(await searchers.reddit_search(), ephemeral=True)
+        print(' chat is sfw')
         await interaction.response.send_message(await searchers.reddit_search(), ephemeral=True)
 
 
