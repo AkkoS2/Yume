@@ -60,6 +60,7 @@ def tenor():
 
 # reddit search
 async def reddit_search():
+
     async with aiohttp.ClientSession() as cs:
         async with cs.get(f"https://reddit.com/r/{sub_reddit}.json") as r:
             data = await r.json()
@@ -68,10 +69,10 @@ async def reddit_search():
         if 'is_gallery' in data['data']['children'][choice]['data']:
 
             pic_id = data['data']['children'][choice]['data']['gallery_data']['items'][0]['media_id']
-            print('got id')
             img_type = data['data']['children'][choice]['data']['media_metadata'][pic_id]['m']
             extension = '.' + img_type[-3:]
-            print(extension)
+            img_url = f"https://i.redd.it/{pic_id}" + extension
+            print(img_url)
 
         if data['data']['children'][choice]['data']['over_18'] is True:
             print(data['data']['children'][choice]['data']['url'])
