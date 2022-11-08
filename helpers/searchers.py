@@ -65,17 +65,31 @@ async def reddit_search():
         async with cs.get(f"https://reddit.com/r/{sub_reddit}.json") as r:
             data = await r.json()
 
+        is_safe = True
+        video = False
         choice = random.randint(0, 25)
+
+        title = data['data']['children'][choice]['data']['title']
+        post_link = data['data']['children'][choice]['data']['permalink']
+        author = data['data']['children'][choice]['data']['author']
+
+        if data['data']['children'][choice]['data']['over_18'] is True:
+            is_safe = False
+
+        if data['data']['children'][choice]['data']['is_video'] is True:
+
+            img_url = data['data']['children'][choice]['data']['media']['reddit_video']['fallback_url']
+            video = True
+            return img_url, is_safe, video, title, post_link, author
+
         if 'is_gallery' in data['data']['children'][choice]['data']:
 
             pic_id = data['data']['children'][choice]['data']['gallery_data']['items'][0]['media_id']
             img_type = data['data']['children'][choice]['data']['media_metadata'][pic_id]['m']
             extension = '.' + img_type[-3:]
             img_url = f"https://i.redd.it/{pic_id}" + extension
-            print(img_url)
+            return img_url, is_safe, video, title, post_link, author
 
-        if data['data']['children'][choice]['data']['over_18'] is True:
-            print(data['data']['children'][choice]['data']['url'])
-            return "that's not safe"
-
-        return "That's safe!"
+        else:
+            img_url = data['data']['children'][choice]['data']['url']
+            return img_url, is_safe, video, title, post_link, author
