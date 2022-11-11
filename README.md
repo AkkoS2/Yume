@@ -1,6 +1,6 @@
 <h1 align="center"> Yume </h1>
 
-<p align="center"> Yume is a brand new discord bot with the focus of being able to do a little of everything. </p>
+<p align="center"> Yume is a discord bot with the focus of being able to do a little of everything. </p>
 Currently in active development, Yume is entirely build with focus to work using only the new discord slash commands or application commands. With a vast variety of commands planned to be made in the near and far future, as a long plan development may be possible.
 
 You can also see all the planned commands and their development status by simply clicking <a href="https://github.com/users/AkkoS2/projects/8/views/1"> HERE </a>
