@@ -99,6 +99,33 @@ class Fun(commands.Cog):
             embed.set_image(url=str(data['gifs']['toss']['urls'][random.randint(0, 3)]))
             await interaction.response.send_message(embed=embed)
 
+    # jankenpon
+    @app_commands.choices(choice=[
+        discord.app_commands.Choice(name='Rock', value='rock'),
+        discord.app_commands.Choice(name='Paper', value='paper'),
+        discord.app_commands.Choice(name='Scissors', value='scissors')
+    ])
+    @app_commands.command(name='rps', description='Rock, Paper, Scissors!')
+    async def rps(self, interaction: discord.Interaction, choice: discord.app_commands.Choice[str]):
+
+        rps = 'rock', 'paper', 'scissors'
+        yume_choice = random.choice(rps)
+
+        if yume_choice == choice.value:
+            await interaction.response.send_message('Aiko desho!', ephemeral=True)
+        elif yume_choice == 'rock' or 'paper' or 'scissors' and choice.value == 'paper':
+            await interaction.response.send_message("", ephemeral=True)
+        elif yume_choice == 'rock' and choice.value == '':
+            await interaction.response.send_message("", ephemeral=True)
+        elif yume_choice == 'scissors' and choice.value == '':
+            await interaction.response.send_message("", ephemeral=True)
+        elif yume_choice == 'scissors' and choice.value == '':
+            await interaction.response.send_message("", ephemeral=True)
+        elif yume_choice == 'paper' and choice.value == '':
+            await interaction.response.send_message("", ephemeral=True)
+        elif yume_choice == 'paper' and choice.value == '':
+            await interaction.response.send_message("", ephemeral=True)
+
 
 # registra as classes no cog
 async def setup(yume: commands.AutoShardedBot) -> None:
