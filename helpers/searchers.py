@@ -1,13 +1,18 @@
 # bibliotecas
+from helpers.envkeys import spotify_id, spotify_secret
+from spotipy.oauth2 import SpotifyClientCredentials
 from helpers.envkeys import kawaii_red, tenor_key
 import requests
 import aiohttp
+import spotipy
 import random
+import json
 
 nekos_gif = None
 kawaii_gif = None
 tenor_gif = None
 sub_reddit = None
+spotify = None
 
 
 # nekos.best
@@ -93,3 +98,18 @@ async def reddit_search():
         else:
             img_url = data['data']['children'][choice]['data']['url']
             return img_url, is_safe, video, title, post_link, author
+
+
+def spotify_search():
+
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=spotify_id(), client_secret=spotify_secret()))
+
+    result = sp.search(q=str(spotify), limit=1)
+    fixing = json.dumps(result)
+    data = json.loads(fixing)
+
+    artist = data['tracks']['items'][0]['artists'][0]['external_urls']['spotify']
+    album = data['tracks']['items'][0]['album']['external_urls']['spotify']
+    song = data['tracks']['items'][0]['external_urls']['spotify']
+
+    return artist, album, song

@@ -2,6 +2,7 @@
 from mcstatus import JavaServer, BedrockServer
 from discord.ext import commands
 from discord import app_commands
+from helpers import searchers
 import discord
 
 
@@ -42,6 +43,25 @@ class Search(commands.Cog):
             bedrock.add_field(name='Player Count:', value=f'{status.players_online}', inline=False)
 
             await interaction.response.send_message(embed=bedrock)
+
+    # Spotify
+    @app_commands.choices(kind=[
+        discord.app_commands.Choice(name='Artist', value=0),
+        discord.app_commands.Choice(name='Album', value=1),
+        discord.app_commands.Choice(name='Song', value=2)
+    ])
+    @app_commands.command(name='spotify', description='Search something in spotify')
+    async def spotfy(self, interaction: discord.Interaction, *, kind: discord.app_commands.Choice[int], search: str):
+
+        searchers.spotify = search
+        result = searchers.spotify_search()
+
+        if kind.value == 0:
+            await interaction.response.send_message(result[0])
+        if kind.value == 1:
+            await interaction.response.send_message(result[1])
+        else:
+            await interaction.response.send_message(result[2])
 
 
 # registra as classes no cog

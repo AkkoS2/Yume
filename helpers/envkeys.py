@@ -19,3 +19,11 @@ def kawaii_red():
 
 def tenor_key():
     return os.environ.get("TENOR_KEY", None)
+
+
+def spotify_id():
+    return os.environ.get("SPOTIFY_ID", None)
+
+
+def spotify_secret():
+    return os.environ.get("SPOTIFY_SECRET", None)

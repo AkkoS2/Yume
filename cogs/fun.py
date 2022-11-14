@@ -105,26 +105,18 @@ class Fun(commands.Cog):
         discord.app_commands.Choice(name='Paper', value='paper'),
         discord.app_commands.Choice(name='Scissors', value='scissors')
     ])
-    @app_commands.command(name='rps', description='Rock, Paper, Scissors!')
+    @app_commands.command(name='rps', description='Lets play Rock, Paper, Scissors!')
     async def rps(self, interaction: discord.Interaction, choice: discord.app_commands.Choice[str]):
 
         rps = 'rock', 'paper', 'scissors'
         yume_choice = random.choice(rps)
 
         if yume_choice == choice.value:
-            await interaction.response.send_message('Aiko desho!', ephemeral=True)
-        elif yume_choice == 'rock' or 'paper' or 'scissors' and choice.value == 'paper':
-            await interaction.response.send_message("", ephemeral=True)
-        elif yume_choice == 'rock' and choice.value == '':
-            await interaction.response.send_message("", ephemeral=True)
-        elif yume_choice == 'scissors' and choice.value == '':
-            await interaction.response.send_message("", ephemeral=True)
-        elif yume_choice == 'scissors' and choice.value == '':
-            await interaction.response.send_message("", ephemeral=True)
-        elif yume_choice == 'paper' and choice.value == '':
-            await interaction.response.send_message("", ephemeral=True)
-        elif yume_choice == 'paper' and choice.value == '':
-            await interaction.response.send_message("", ephemeral=True)
+            await interaction.response.send_message('Aiko desho!')
+        elif yume_choice == 'rock' and choice.value == 'scissors' or yume_choice == 'paper' and choice.value == 'rock' or yume_choice == 'scissors' and choice.value == 'paper':
+            await interaction.response.send_message(f"I'm the winner ehehe~")
+        else:
+            await interaction.response.send_message(f"You're the winner, congrats!")
 
 
 # registra as classes no cog
