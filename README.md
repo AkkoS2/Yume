@@ -20,17 +20,17 @@ You are completly free to create as many forks of Yume you want!
 
 <h2 align="center"> WIKI </h2>
 
-The Wiki is not planned to be made while at least 80% of the commands where done and working.
+<p align="center"> Soon™ </p>
 
 <h2 align="center"> Current Progress </h2>
 
 <ul>
-    <li> Commands/Features Completed: 80
-    <li> To-Do Commands: 71
-    <li> Not Necessary Anymore: 4
+    <li> Commands/Features Completed: 84
+    <li> To-Do Commands: 67
+    <li> Not Necessary Anymore: 5
     <li> Implemented by Discord: 5
     <li> Discarded: 6
-    <li> Total: 166 (151)
+    <li> Total: 167 (151)
 </ul>
 
 <h2 align="center"> DISCLAIMER </h2>
