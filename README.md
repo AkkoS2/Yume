@@ -25,11 +25,11 @@ You are completly free to create as many forks of Yume you want!
 <h2 align="center"> Current Progress </h2>
 
 <ul>
-    <li> Commands/Features Completed: 84
-    <li> To-Do Commands: 67
+    <li> Commands/Features Completed: 86
+    <li> To-Do Commands/Features: 64
     <li> Not Necessary Anymore: 5
     <li> Implemented by Discord: 5
-    <li> Discarded: 6
+    <li> Discarded: 7
     <li> Total: 167 (151)
 </ul>
 
