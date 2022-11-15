@@ -50,13 +50,11 @@ class Utility(commands.Cog):
     @app_commands.command(name='waifu2x', description="Utilizes AI to reduce image noise and improve quality")
     async def waifu2x(self, interaction: discord.Interaction, *, image: discord.Attachment):
 
-        image_url = image.url
-
         w2x_wait = discord.Embed(color=discord.Colour.random(), description='**Your image is being generated, please wait a moment.**')
         w2x_done = discord.Embed(color=discord.Colour.random(), description='**Here is your image!**')
         await interaction.response.send_message(embed=w2x_wait)
 
-        r = requests.post('https://api.deepai.org/api/waifu2x', data={'image': f'{image_url}'}, headers={'api-key': f'{deepai_key()}'})
+        r = requests.post('https://api.deepai.org/api/waifu2x', data={'image': f'{image.url}'}, headers={'api-key': f'{deepai_key()}'})
 
         if r.status_code == 200:
             data = r.json()
@@ -75,13 +73,11 @@ class Utility(commands.Cog):
     @app_commands.command(name='colorize', description="Utilizes AI to colorize a black and white image")
     async def colorize(self, interaction: discord.Interaction, *, image: discord.Attachment):
 
-        image_url = image.url
-
         colorize_wait = discord.Embed(color=discord.Colour.random(), description='**Your image is being generated...**')
         colorize_done = discord.Embed(color=discord.Colour.random(), description="**here's your image, hope you liked it!**")
         await interaction.response.send_message(embed=colorize_wait)
 
-        r = requests.post('https://api.deepai.org/api/colorizer', data={'image': f'{image_url}'}, headers={'api-key': f'{deepai_key()}'})
+        r = requests.post('https://api.deepai.org/api/colorizer', data={'image': f'{image.url}'}, headers={'api-key': f'{deepai_key()}'})
 
         if r.status_code == 200:
             data = r.json()

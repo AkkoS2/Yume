@@ -124,6 +124,29 @@ class Fun(commands.Cog):
 
         await interaction.response.send_message(text[::-1])
 
+    # roll
+    @app_commands.command(name='roll', description='Rolls a random value to you...')
+    async def roll(self, interaction: discord.Interaction):
+
+        points = random.randint(0, 727)
+
+        if points == 727:
+            await interaction.response.send_message(f"**{points}! WYSI! WYFSI!**")
+
+        await interaction.response.send_message(f"You've got **{points}** points! what do you think?? wanna try again?")
+
+    # Rate Things
+    @app_commands.command(name='rate', description="I'll rate a image with a score between 0 to 10")
+    async def rate(self, interaction: discord.Interaction, image: discord.Attachment):
+
+        value = hash(image.url) % 50
+
+        if value > 20:
+            score = value / 2
+            await interaction.response.send_message(f"I give {round(score)} points to this attachment!")
+
+        await interaction.response.send_message(f"I give {round(value)} points to this attachment!")
+
 
 # registra as classes no cog
 async def setup(yume: commands.AutoShardedBot) -> None:
