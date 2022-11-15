@@ -27,3 +27,11 @@ def spotify_id():
 
 def spotify_secret():
     return os.environ.get("SPOTIFY_SECRET", None)
+
+
+def rapid_api():
+    return os.environ.get("RAPID_API", None)
+
+
+def exrate_api():
+    return os.environ.get("EXRATE_API", None)

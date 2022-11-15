@@ -118,6 +118,12 @@ class Fun(commands.Cog):
         else:
             await interaction.response.send_message(f"You're the winner, congrats!")
 
+    # invert
+    @app_commands.command(name='invert', description='?naem uoy od tahW')
+    async def invert(self, interaction: discord.Interaction, text: str):
+
+        await interaction.response.send_message(text[::-1])
+
 
 # registra as classes no cog
 async def setup(yume: commands.AutoShardedBot) -> None:
