@@ -22,7 +22,18 @@ You are completly free to create as many forks of Yume you want!
 
 <p align="center"> Soon™ </p>
 
-<h2 align="center"> Current Progress </h2>
+<h2 align="center"> Work In Progress & Current Status </h2>
+
+- [ ] Commands: Search for a anime character
+- [ ] Commands: Search for a youtube video
+- [ ] Commands: Search for a manga
+- [ ] Commands: Search for a song lyrics
+- [ ] Commands: Search for an anime episode
+- [ ] Commands: Search from the MyAnimeListAPI
+- [ ] Commands: Search from the AniListAPI
+- [ ] Features: Language modules **(Priority)**
+- [ ] Features: Database connection **(Priority)**
+- [ ] Features: Logs everywhere **(Priority)**
 
 <ul>
     <li> Commands/Features Completed: 86
