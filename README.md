@@ -22,27 +22,27 @@ You are completly free to create as many forks of Yume you want!
 
 <p align="center"> Soon™ </p>
 
-<h2 align="center"> Work In Progress & Current Status </h2>
+<h2 align="center"> Work In Progress & Development Statuses </h2>
 
-- [ ] Commands: Search for a anime character
-- [ ] Commands: Search for a youtube video
-- [ ] Commands: Search for a manga
-- [ ] Commands: Search for a song lyrics
-- [ ] Commands: Search for an anime episode
-- [ ] Commands: Search from the MyAnimeListAPI
-- [ ] Commands: Search from the AniListAPI
-- [ ] Features: Language modules **(Priority)**
-- [ ] Features: Database connection **(Priority)**
-- [ ] Features: Logs everywhere **(Priority)**
+* Work in Progress
+    * - [ ] Commands: Search for a anime character
+    * - [ ] Commands: Search for a youtube video
+    * - [ ] Commands: Search for a manga
+    * - [ ] Commands: Search for a song lyrics
+    * - [ ] Commands: Search for an anime episode
+    * - [ ] Commands: Search from the MyAnimeListAPI
+    * - [ ] Commands: Search from the AniListAPI
+    * - [ ] Features: Language modules **(Priority)**
+    * - [ ] Features: Database connection **(Priority)**
+    * - [ ] Features: Logs everywhere **(Priority)**
 
-<ul>
-    <li> Commands/Features Completed: 86
-    <li> To-Do Commands/Features: 64
-    <li> Not Necessary Anymore: 5
-    <li> Implemented by Discord: 5
-    <li> Discarded: 7
-    <li> Total: 167 (151)
-</ul>
+* Development Statuses
+    * Commands/Features Completed: 86
+    * To-Do Commands/Features: 64
+    * Not Necessary Anymore: 5
+    * Implemented by Discord: 5
+    * Discarded: 7
+    * Total: 167 (151)
 
 <h2 align="center"> DISCLAIMER </h2>
 
