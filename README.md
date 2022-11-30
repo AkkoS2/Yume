@@ -28,7 +28,7 @@ You are completly free to create as many forks of Yume you want!
     * - [ ] Commands: Search for a anime character
     * - [ ] Commands: Search for a youtube video
     * - [ ] Commands: Search for a manga
-    * - [ ] Commands: Search for a song lyrics
+    * - [ x ] Commands: Search for a song lyrics
     * - [ ] Commands: Search for an anime episode
     * - [ ] Commands: Search from the MyAnimeListAPI
     * - [ ] Commands: Search from the AniListAPI
