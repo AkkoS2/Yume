@@ -1,7 +1,8 @@
 # bibliotecas
-from helpers.envkeys import spotify_id, spotify_secret
+from helpers.envkeys import kawaii_red, tenor_key, spotify_id, spotify_secret, genius_key
 from spotipy.oauth2 import SpotifyClientCredentials
-from helpers.envkeys import kawaii_red, tenor_key
+from youtube_search import YoutubeSearch
+import lyricsgenius
 import requests
 import aiohttp
 import spotipy
@@ -13,6 +14,9 @@ kawaii_gif = None
 tenor_gif = None
 sub_reddit = None
 spotify = None
+ytube = None
+lyrics = None
+vocals = None
 
 
 # nekos.best
@@ -113,3 +117,21 @@ def spotify_search():
     song = data['tracks']['items'][0]['external_urls']['spotify']
 
     return artist, album, song
+
+
+def youtube_search():
+
+    yt = YoutubeSearch(str(ytube), 10).to_json()
+    print(yt)
+    return 'a'
+
+
+def genius_search():
+
+    genius = lyricsgenius.Genius(genius_key())
+    genius.remove_section_headers = True
+    genius.verbose = False
+    song = genius.search_song(str(lyrics), artist=str(vocals))
+    result = song.lyrics
+
+    return result

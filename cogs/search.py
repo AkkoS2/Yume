@@ -105,6 +105,31 @@ class Search(commands.Cog):
 
         await interaction.response.send_message(f"Looks like {amount} {currency1.upper()} is worth {value} {currency2.upper()} at the moment!")
 
+    # youtube
+    @app_commands.command(name='youtube', description="I'll search and send you a link to a video/playlist!")
+    async def youtube(self, interaction: discord.Interaction, *, search: str):
+
+        searchers.ytube = search
+        await interaction.response.send_message(searchers.youtube_search(), ephemeral=True)
+
+    # lyrics
+    @app_commands.command(name='lyrics', description="Want to search a song's lyrics? (the response will be ephemeral)")
+    async def lyrics(self, interaction: discord.Interaction, *, song: str, artist: str):
+
+        searchers.lyrics = song
+        searchers.vocals = artist
+
+        result = searchers.genius_search()
+        print(len(searchers.genius_search()))
+
+        if len(result) >= 2000:
+
+            result = result[:len(result)//2]
+            await interaction.response.send_message(result, ephemeral=True)
+
+        else:
+            await interaction.response.send_message(result, ephemeral=True)
+
 
 # registra as classes no cog
 async def setup(yume: commands.AutoShardedBot) -> None:

@@ -136,7 +136,7 @@ class Fun(commands.Cog):
         await interaction.response.send_message(f"You've got **{points}** points! what do you think?? wanna try again?")
 
     # Rate Things
-    @app_commands.command(name='rate', description="I'll rate a image with a score between 0 to 10")
+    @app_commands.command(name='rate', description="I'll rate a image with a random score!")
     async def rate(self, interaction: discord.Interaction, image: discord.Attachment):
 
         value = hash(image.url) % 50

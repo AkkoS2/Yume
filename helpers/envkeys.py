@@ -35,3 +35,7 @@ def rapid_api():
 
 def exrate_api():
     return os.environ.get("EXRATE_API", None)
+
+
+def genius_key():
+    return os.environ.get("GENIUS_KEY", None)
