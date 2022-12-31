@@ -1,0 +1,367 @@
+{
+  "CommandNotFound": [
+    "what?",
+    "I can't do this",
+    "Yume has only slash commands, silly~",
+    "Let's try using a slash command",
+    "You can use /help if you're having trouble with my commands!"
+  ],
+  "CogActions":{
+    "Smug": [
+      "So much smugness!",
+      "is smugging!",
+      "is smugging at"
+      ],
+    "Party": [
+      "I wonder if parties are fun?",
+      "Yume is gonna party with you!",
+      "is partying with"
+    ],
+    "Kill": [
+      "Why you have to do this?",
+      " Just killed itself... I'm gonna miss you",
+      " killed {user.name}, why????? YOU MONSTER"
+    ],
+    "Clap": [
+      "Claps are too loud for me but, continue as you like!",
+      " is clapping!!",
+      "started clapping with"
+    ],
+    "Dance": [
+      "Yume doesn't know how to dance, so i'm gonna keep watching",
+      "started dancing, it looks fun!",
+      "is dancing with {user.name}, how cute!~"
+    ],
+    "Shame": [
+      "that's kinda cringe, not gonna lie",
+      "is ashamed with himself!",
+      "is ashamed about {user.name}, why?"
+    ],
+    "Facepalm": [
+      "that's uh... nevermind...",
+      "sigh....",
+      "facepalmed because of"
+    ],
+    "Laugh": [
+      "hehe~",
+      "You know, laughing alone because of nothing is kinda creepy",
+      "is laughing with {user.name}, did something funny happened?"
+    ],
+    "Pout": [
+      "I'm not talking, hmpf!",
+      "Did something happened with",
+      "is making {interaction.user.name} being a pouty!"
+    ],
+    "Purr": [
+      "nyaa nyaan~",
+      "Do you think you are a little kitty, huh?",
+      "is purring at {user.name}...."
+    ],
+    "Shrug": [
+      "i don't know, why?",
+      "'Hey look! {interaction.user.name} is shrugging!",
+      "started shrugging at {user.name}, is there a reason?"
+    ],
+    "Smile": [
+      "Happy times are so comfy~",
+      "You should always smile,",
+      "is smiling at {user.name}, how cute~"
+    ],
+    "Die": [
+      "Hey, I think this person just died, what do?",
+      "died, somebody call an ambule!",
+      "just made {interaction.user.name} die, how mean!"
+    ],
+    "Wiggle": [
+      "Wiggle again! Please!",
+      "It seems that {interaction.user.name} likes to wiggle",
+      "is wiggling with {user.name}, so cute!"
+    ],
+    "Cry": [
+      "What happened? Why are you crying?",
+      "Why are you crying, {interaction.user.name} did something happened?",
+      "is mean and made {interaction.user.name} cry"
+    ],
+    "Run": [
+      "Faster! Faster! You're too slow!",
+      "Why are you running away,",
+      "is running away from {user.name}, maybe I should run away too?"
+    ],
+    "HighFive": [
+      "High Five! Do it again!",
+      "Yume is going to do a high five with you, come here!",
+      "did a high five with"
+    ],
+    "Arrest": [
+      "Ohh! So you're our new guest at the prison??",
+      "You're under arrest, do not resist!",
+      "just arrested {user.name}, why??"
+    ],
+    "Greet": [
+      "Hello there!!",
+      "You wanted to be greeted, huh? Then I'm gonna do it~",
+      "greeted {user.name}, so nice to see it!!"
+    ],
+    "Cheer": [
+      "Let's all do it together next time!",
+      "Since you want this, I'm gonna do it!",
+      "Look! {interaction.user.name} is cheering with"
+    ],
+    "Sad": [
+      "I Wonder what happened...",
+      "Did something happened? Are you alright?",
+      "Perhaps {user.name} made {interaction.user.name} sad?"
+    ],
+    "Shy": [
+      "You're so cute when you are shy~",
+      "Did you just made yourself shy about yourself? How cute~",
+      "is acting shy in front of"
+    ],
+    "Wag": [
+      "That's.... cute....",
+      "Why are you wagging at yourself?",
+      "Everyone Look! {interaction.user.name} is wagging at {user.name}!"
+    ]
+},
+  "CogFun": {
+    "Fortune": [
+      "This is what the cookie said to Yume!"
+      ],
+    "VayHek": [
+      "WHY ARE THESE FOOLS STILL BREATHING MY AIR?!?!?!?!"
+    ],
+    "Coin": [
+      "The result is... Middle!! What??",
+      "And the result is.... {result.upper()}! Congratulations!!",
+      "Uhh... Looks like you're wrong... The result was"
+    ],
+    "RPS": [
+      "I'm the winner ehehe~",
+      "You're the winner, congrats!"
+    ],
+    "Roll": [
+      "You've got **{points}** points! what do you think?? wanna try again?"
+    ],
+    "Rate": [
+      "I give {round(score)} points to this attachment!"
+    ]
+  },
+  "CogHelp": {
+    "Responses": [
+      "Check your DM, cutie~",
+      "There's nothing here yet..."
+    ]
+  },
+  "CogImage": {
+    "Reddit": [
+      "Looks like the post I got is tagged as NSFW and the channel isn't"
+    ]
+  },
+  "CogMathematics": {
+    "BasicMath": [
+      "I think the result is"
+    ],
+    "Factorial": [
+      "Let's try a different number, okay...?",
+      "I've done the maths and, the result is"
+    ],
+    "SquareRoot": [
+      "I'm only doing this with a positive number, okay?",
+      "I've done with the maths and the result is: {result:.2f}, i think?",
+      "Looks like this number doesn't have a square root"
+    ],
+    "InvSquareRoot": [
+      "Can you use a positive number? please and thank you!",
+      "The inverse square root of {number} is: {result:.2f}! Yume is smart, hehe~",
+      "Something went wrong, I'm so sorry :c"
+    ],
+    "FirstDegreeEquation": [
+      "The solution for this is",
+      "Someting went wrong.... sorry."
+    ],
+    "SecondDegreeEquation": [
+      "The solution is: x1 = {x1:.2f} and x2 = {x2:.2f}",
+      "Someting went wrong.... sorry."
+    ]
+  },
+  "CogModeration": {
+    "Clear": [
+      "You need to choose something between 1 and 100, cutie",
+      "I've just deleted **{amount}** message.",
+      "I've deleted **{amount}** messages, just as you asked!"
+    ],
+    "Nuke": [
+      "has cloned this channel.",
+      "I've clone the channel just as you asked!"
+    ],
+    "Create": [
+      "I've created the text channel just like you wanted!",
+      "And it's created! Hope you like it~",
+      "Done! I Hope you like it, hehe~"
+    ],
+    "Delete": [
+      "And done! That text channel doesn't exist anymore",
+      "The voice channel you have chosen is now gone forever!",
+      "The category doesn't exist anymore, hehe~"
+    ]
+  },
+  "CogNSFW": {
+
+  },
+  "CogRolePlay": {
+    "Hug": [
+      "Just lovely!",
+      "Feeling lonely? Come here, Yume is gonna hug you ❤️",
+      "just hugged"
+    ],
+    "Slap": [
+      "That was funny to watch... hehe~",
+      "If you insist... i'm so sorry...",
+      "slapped {user.name}! I wonder if it hurts? hmm..."
+    ],
+    "Kiss": [
+      "it was really cute!",
+      "Awwnn... Come here, Yume is gonna give you a kiss!",
+      "just kissed {user.name}! In front of everyone!"
+    ],
+    "Pat": [
+      "Everyone should receive a little pat!",
+      "Seems that you are lonely... I'm gonna pat you, don't worry!",
+      "just patted"
+    ],
+    "Bite": [
+      "Does it hurt? Maybe it was too strong?",
+      "I'm gonna bite you then. Is here a good place?",
+      "has bitten {user.name}, I wonder why?"
+    ],
+    "Stare": [
+      "Careful to not stare too much, they may notice it...",
+      "I'm gonna stare at you then... please don't look away!",
+      "is staring at {user.name}, strange..."
+    ],
+    "Shoot": [
+      "Oh my God, are you okay? I'm calling a ambulance, stay strong, please!",
+      "I wasn't wanting to shoot you but, that might be.... hehe~",
+      "just shot {user.name}, should we call the police?"
+    ],
+    "Punch": [
+      "That actually might have been painful, I guess?",
+      "I usually don't like punching people, but since you asked so nicely~",
+      "punched {user.name}, how strong was it..?"
+    ],
+    "Poke": [
+      "Is it annoying to keep poking people?",
+      "Yume likes poking others, come here!!!",
+      "poked {user.name}. I want to poke them too!"
+    ],
+    "Cuddle": [
+      "That was one of the most cute things I've ever seen",
+      "Seems like you are always alone, huh? come here, cutie!",
+      "is cuddling with {user.name}, do not interrupt them!"
+    ],
+    "Lick": [
+      "How does it taste?",
+      "I really didn't want to lick you, but since you asked for it...",
+      "Do you really like licking metal? You can keep licking then...",
+      "is licking {user.name}, I wonder why.... Does it taste good?"
+    ],
+    "Stomp": [
+      "Looks like it's hurting... but it's funny to watch~",
+      "You asked for it, come here! and don't even think of running away~",
+      "stomped {user.name}, maybe they liked it..."
+    ],
+    "Boop": [
+      "Hey~ this is funny hehe~",
+      "I like doing this, it's funny and cute!",
+      "has boop {user.name}, this is cute, please continue!"
+    ],
+    "Glare": [
+      "Someone's glaring so much~",
+      "Yume is going to glare at you, hope you don't mind~",
+      "is glaring at {user.name} so intensely!"
+    ],
+    "Spank": [
+      "Looks like someone's has been naughty...",
+      "This will probably hurt, i'm sorry",
+      "I wonder why {interaction.user.name} is spanking {user.name}..."
+    ]
+  },
+  "CogSearch": {
+    "McServer": [
+      "Server IP:",
+      "Player Count:"
+    ],
+    "CryptoValue": [
+      "is worth **{value} USDT** at the moment!",
+      "There's a problem..."
+    ],
+    "UrbanDictionary": [
+      "The meaning of **{term}** is:"
+    ],
+    "CurrencyConverter": [
+      "Looks like {amount} {currency1.upper()} is worth {value} {currency2.upper()} at the moment!"
+      ]
+  },
+  "CogUtility": {
+    "Ping": [
+      "I think it is **{ping}ms**, maybe?"
+    ],
+    "Yume": [
+      "Everything looks fine here, no problems!"
+    ],
+    "Avatar": [
+      "This is your avatar! Cute isn't it?",
+      "This is {user.name}'s avatar! Cute isn't it?"
+    ],
+    "Waifu2x": [
+      "Your image is being generated, please wait a moment.",
+      "Here is your image!"
+    ],
+    "Colorize": [
+      "Your image is being generated...",
+      "Here's your image, hope you liked it!"
+    ],
+    "InfoUser": [
+      "Server member since",
+      "Account created in",
+      "Roles",
+      "Permissions",
+      "User ID"
+    ],
+    "ServerInfo": [
+      "{interaction.guild.name}'s Info",
+      "Voice Channels",
+      "Text Channels",
+      "Member Count",
+      "Created in",
+      "Server Owner",
+      "Server ID"
+    ],
+    "Password": [
+      "Here's your brand new password",
+      "This is the color that i've generated!"
+    ]
+  },
+  "Eightball": [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes definitely.",
+    "You may rely on it.",
+    "As I see it, yes.",
+    "Most likely",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful"
+  ]
+}

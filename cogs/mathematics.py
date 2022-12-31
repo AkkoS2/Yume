@@ -67,7 +67,7 @@ class Mathematics(commands.GroupCog, name='math'):
             await interaction.response.send_message(f"I've done with the maths and the result is: {result:.2f}, i think?")
 
         except ValueError:
-            await interaction.response.send_message(f"Looks like this number doesn't have a square root")
+            await interaction.response.send_message(f"Looks like this number doesn't have a square root", ephemeral=True)
 
     # inverse square root
     @app_commands.command(name='inv-square-root', description='An inverse square root... why not??')
@@ -75,7 +75,7 @@ class Mathematics(commands.GroupCog, name='math'):
 
         try:
             if number <= 0:
-                await interaction.response.send_message(f"Can you use a positive number? please and thank you!")
+                await interaction.response.send_message(f"Can you use a positive number? please and thank you!", ephemeral=True)
 
             three_halfs = 1.5
             x2 = number * 0.5
@@ -96,27 +96,55 @@ class Mathematics(commands.GroupCog, name='math'):
             await interaction.response.send_message(f"Something went wrong, I'm so sorry :c")
 
     # equação primeiro grau
-    @app_commands.command(name='first-degree-equation', description="I will calculate it with the values of your choice!")
+    @app_commands.command(name='linear-equation', description="I will calculate it with the values of your choice!")
     async def first_degree(self, interaction: discord.Interaction, *, a: float, b: float):
 
-        try:
-            x = -b / a
-            await interaction.response.send_message(f'The solution for this is: x = {x:.2f}')
+        if a == 0:
+            await interaction.response.send_message(f"The value of A is zero, so it doesn't have a solution, try again!", ephemeral=True)
 
-        except ValueError:
-            await interaction.response.send_message(f"Someting went wrong.... sorry.")
+        x = -b / a
+        await interaction.response.send_message(f"The value of X is: {x:.2f}")
 
     # equação de segundo grau
-    @app_commands.command(name='second-degree-equation', description="I will calculate it with the values of your choice!")
+    @app_commands.command(name='quadratic-equation', description="I will calculate it with the values of your choice!")
     async def second_degree(self, interaction: discord.Interaction, *, a: float, b: float, c: float):
 
-        try:
-            x1 = (-b + math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
-            x2 = (-b - math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
-            await interaction.response.send_message(f"The solution is: x1 = {x1:.2f} and x2 = {x2:.2f}")
+        if a == 0:
+            await interaction.response.send_message("The value of A is zero, let's try another value, okay?", ephemeral=True)
 
-        except ValueError:
-            await interaction.response.send_message(f"Someting went wrong.... sorry.")
+        delta = b ** 2 - 4 * a * c
+
+        if delta < 0:
+            await interaction.response.send_message("Looks like the Delta value is negative, so it doesn't have a real solution.", ephemeral=True)
+
+        x1 = (-b + math.sqrt(delta)) / (2 * a)
+        x2 = (-b - math.sqrt(delta)) / (2 * a)
+
+        await interaction.response.send_message(f"Yume thinks that the result of this equation is: X1: {x1:.2f} and X2: {x2:.2f}")
+
+    # equação de terceiro grau
+    @app_commands.command(name='cubic-equation', description="I will calculate it with the values of your choice!")
+    async def third_degree(self, interaction: discord.Interaction, *, a: float, b: float, c: float, d: float):
+
+        if a == 0:
+            await interaction.response.send_message("Hmm... the value of A is zero, i need another value to do that.", ephemeral=True)
+
+        delta = (b ** 2) - (3 * a * c) + (9 * a * d)
+        delta_0 = (2 * b ** 3) - (9 * a * b * c) + (27 * a ** 2 * d)
+
+        if delta < 0 or delta_0 < 0:
+            await interaction.response.send_message("Oh no, Delta value is negative, let's try again?", ephemeral=True)
+
+        if delta == 0:
+            x = (-b + math.cbrt(delta_0)) / (3 * a)
+            await interaction.response.send_message(f"Yume found the root of the equation, and it is: {x:.2f}")
+
+        else:
+            x1 = (-b + math.sqrt(delta) + math.cbrt(delta_0)) / (3 * a)
+            x2 = (-b - math.sqrt(delta) + math.cbrt(delta_0)) / (3 * a)
+            x3 = (-b + math.sqrt(delta) - math.cbrt(delta_0)) / (3 * a)
+
+            await interaction.response.send_message(f"The results of this equation are: X1: {x1:.2f}, X2: {x2:.2f} and X3: {x3:.2f}")
 
 
 # registra a classe cog

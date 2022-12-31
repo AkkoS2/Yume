@@ -74,7 +74,7 @@ class Utility(commands.Cog):
     async def colorize(self, interaction: discord.Interaction, *, image: discord.Attachment):
 
         colorize_wait = discord.Embed(color=discord.Colour.random(), description='**Your image is being generated...**')
-        colorize_done = discord.Embed(color=discord.Colour.random(), description="**here's your image, hope you liked it!**")
+        colorize_done = discord.Embed(color=discord.Colour.random(), description="**Here's your image, hope you liked it!**")
         await interaction.response.send_message(embed=colorize_wait)
 
         r = requests.post('https://api.deepai.org/api/colorizer', data={'image': f'{image.url}'}, headers={'api-key': f'{deepai_key()}'})
