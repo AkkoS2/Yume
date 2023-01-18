@@ -30,12 +30,12 @@ You are completly free to create as many forks of Yume you want!
     * - [ ] Features: Logs everywhere
 
 * Development Statuses
-    * [1] Commands/Features Completed: 90
-    * [2] To-Do Commands/Features: 53
+    * [1] Commands/Features Completed: 87
+    * [2] To-Do Commands/Features: 47
     * [3] Not Necessary Anymore: 4
     * [4] Implemented by Discord: 5
-    * [5] Discarded: 14
-    * Total: 143 (Excluding <strong>3, 4 & 5</strong>)
+    * [5] Discarded: 22
+    * Total: 134 (Excluding <strong>3, 4 & 5</strong>)
 
 <h2 align="center"> DISCLAIMER </h2>
 
