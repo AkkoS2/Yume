@@ -18,34 +18,6 @@ class Search(commands.Cog):
     async def on_ready(self):
         print('Search is Ready!!')
 
-    # Minecraft Server Status
-    @app_commands.choices(version=[
-        discord.app_commands.Choice(name='Java', value=1),
-        discord.app_commands.Choice(name='Bedrock', value=2)
-    ])
-    @app_commands.command(name='mcserver', description="I'll show you the details about a minecraft server!")
-    async def mcserver(self, interaction: discord.Interaction, *, version: discord.app_commands.Choice[int], ip: str):
-
-        if version.value == 1:
-            server = JavaServer.lookup(f'{ip}')
-            status = server.status()
-
-            java = discord.Embed(colour=discord.Colour.random())
-            java.add_field(name='Server IP:', value=ip, inline=False)
-            java.add_field(name='Player Count:', value=f'{status.players_online}**/**{status.players.max}', inline=False)
-
-            await interaction.response.send_message(embed=java)
-
-        else:
-            server = BedrockServer.lookup(f'{ip}')
-            status = server.status()
-
-            bedrock = discord.Embed(colour=discord.Colour.random())
-            bedrock.add_field(name='Server IP:', value=ip, inline=False)
-            bedrock.add_field(name='Player Count:', value=f'{status.players_online}', inline=False)
-
-            await interaction.response.send_message(embed=bedrock)
-
     # Spotify
     @app_commands.choices(kind=[
         discord.app_commands.Choice(name='Artist', value=0),
@@ -104,31 +76,6 @@ class Search(commands.Cog):
         value = data['conversion_result']
 
         await interaction.response.send_message(f"Looks like {amount} {currency1.upper()} is worth {value} {currency2.upper()} at the moment!")
-
-    # youtube
-    @app_commands.command(name='youtube', description="I'll search and send you a link to a video/playlist!")
-    async def youtube(self, interaction: discord.Interaction, *, search: str):
-
-        searchers.ytube = search
-        await interaction.response.send_message(searchers.youtube_search(), ephemeral=True)
-
-    # lyrics
-    @app_commands.command(name='lyrics', description="Want to search a song's lyrics? (the response will be ephemeral)")
-    async def lyrics(self, interaction: discord.Interaction, *, song: str, artist: str):
-
-        searchers.lyrics = song
-        searchers.vocals = artist
-
-        result = searchers.genius_search()
-        print(len(searchers.genius_search()))
-
-        if len(result) >= 2000:
-
-            result = result[:len(result)//2]
-            await interaction.response.send_message(result, ephemeral=True)
-
-        else:
-            await interaction.response.send_message(result, ephemeral=True)
 
 
 # registra as classes no cog

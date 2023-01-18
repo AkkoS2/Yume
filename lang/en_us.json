@@ -159,11 +159,11 @@
   },
   "CogMathematics": {
     "BasicMath": [
-      "I think the result is"
+      "I think the result is: {result:.2f}"
     ],
     "Factorial": [
       "Let's try a different number, okay...?",
-      "I've done the maths and, the result is"
+      "I've done the maths and, the result is: {result}"
     ],
     "SquareRoot": [
       "I'm only doing this with a positive number, okay?",
@@ -176,12 +176,19 @@
       "Something went wrong, I'm so sorry :c"
     ],
     "FirstDegreeEquation": [
-      "The solution for this is",
-      "Someting went wrong.... sorry."
+      "The value of A is zero, so it doesn't have a solution, try again!",
+      "The value of X is: {x:.2f}"
     ],
     "SecondDegreeEquation": [
-      "The solution is: x1 = {x1:.2f} and x2 = {x2:.2f}",
-      "Someting went wrong.... sorry."
+      "The value of A is zero, let's try another value, okay?",
+      "Looks like the Delta value is negative, so it doesn't have a real solution.",
+      "Yume thinks that the result of this equation is: X1: {x1:.2f} and X2: {x2:.2f}"
+    ],
+    "ThirdDegreeEquation": [
+      "Hmm... the value of A is zero, i need another value to do that.",
+      "Oh no, Delta value is negative, let's try again?",
+      "Yume found the root of the equation, and it is: {x:.2f}",
+      "The results of this equation are: X1: {x1:.2f}, X2: {x2:.2f} and X3: {x3:.2f}"
     ]
   },
   "CogModeration": {
@@ -287,10 +294,6 @@
     ]
   },
   "CogSearch": {
-    "McServer": [
-      "Server IP:",
-      "Player Count:"
-    ],
     "CryptoValue": [
       "is worth **{value} USDT** at the moment!",
       "There's a problem..."
@@ -315,11 +318,15 @@
     ],
     "Waifu2x": [
       "Your image is being generated, please wait a moment.",
-      "Here is your image!"
+      "Here is your image!",
+      "Remember to save the image, the link might broke after some minutes",
+      "Looks like something happened with the API, sorry..."
     ],
     "Colorize": [
       "Your image is being generated...",
-      "Here's your image, hope you liked it!"
+      "Here's your image, hope you liked it!",
+      "Remember to save the image, the link might broke after some minutes",
+      "Looks like something happened with the API, sorry..."
     ],
     "InfoUser": [
       "Server member since",
@@ -337,7 +344,7 @@
       "Server Owner",
       "Server ID"
     ],
-    "Password": [
+    "Generators": [
       "Here's your brand new password",
       "This is the color that i've generated!"
     ]
@@ -362,6 +369,6 @@
     "My reply is no.",
     "My sources say no.",
     "Outlook not so good.",
-    "Very doubtful"
+    "Very doubtful."
   ]
 }

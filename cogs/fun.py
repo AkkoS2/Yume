@@ -135,18 +135,6 @@ class Fun(commands.Cog):
 
         await interaction.response.send_message(f"You've got **{points}** points! what do you think?? wanna try again?")
 
-    # Rate Things
-    @app_commands.command(name='rate', description="I'll rate a image with a random score!")
-    async def rate(self, interaction: discord.Interaction, image: discord.Attachment):
-
-        value = hash(image.url) % 50
-
-        if value > 20:
-            score = value / 2
-            await interaction.response.send_message(f"I give {round(score)} points to this attachment!")
-
-        await interaction.response.send_message(f"I give {round(value)} points to this attachment!")
-
 
 # registra as classes no cog
 async def setup(yume: commands.AutoShardedBot) -> None:

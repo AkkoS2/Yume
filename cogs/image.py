@@ -4,6 +4,7 @@ from discord.ext import commands
 from discord import app_commands
 from helpers import searchers
 import discord
+import hmtai
 
 
 # realiza a criação da classe cog
@@ -48,6 +49,13 @@ class Image(commands.Cog):
             embed.set_footer(text=result[5] + f'on r/{subreddit}')
             embed.set_image(url=str(result[0]))
             await interaction.response.send_message(embed=embed)
+
+    # nekos
+    @app_commands.command(name='neko', description="I'll give you a random neko image!")
+    async def neko(self, interaction: discord.Interaction):
+
+        neko = hmtai.get(source="hmtai", category="neko_arts")
+        await interaction.response.send_message(neko)
 
 
 # registra as classes no cog
