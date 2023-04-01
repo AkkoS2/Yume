@@ -1,8 +1,8 @@
 # bibliotecas
 from discord.ext import commands
 from discord import app_commands
-from helpers.assets import embed
-from helpers import searchers
+from utils.assets import embed
+from utils import helpers
 import discord
 
 
@@ -21,8 +21,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='hug', description='Give a hug to someone!')
     async def hug(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'hug'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'hug'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text='Just lovely!')
 
         if user == interaction.user:
@@ -36,8 +36,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='slap', description='Slaps someone')
     async def slap(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'slap'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'slap'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text='That was funny to watch... hehe~')
 
         if user == interaction.user:
@@ -51,8 +51,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='kiss', description='Give a kiss to someone')
     async def kiss(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'kiss'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'kiss'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text='it was really cute!')
 
         if user == interaction.user:
@@ -66,8 +66,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='pat', description='You can pat someone')
     async def pat(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'pat'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'pat'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text='Everyone should receive a little pat!')
 
         if user == interaction.user:
@@ -81,8 +81,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='bite', description='Bites someone, just make sure to not hurt them')
     async def bite(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'bite'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'bite'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text='Does it hurt? Maybe it was too strong?')
 
         if user == interaction.user:
@@ -96,8 +96,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='stare', description='Just... stare at someone for no reason')
     async def stare(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'stare'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'stare'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text='Careful to not stare too much, they may notice it...')
 
         if user == interaction.user:
@@ -111,8 +111,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='shoot', description='Shoots a user, careful to not kill them')
     async def shoot(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'shoot'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'shoot'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text="Oh my God, are you okay? I'm calling a ambulance, stay strong, please!")
 
         if user == interaction.user:
@@ -126,8 +126,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='punch', description='Punches someone!')
     async def punch(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'punch'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'punch'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text='That actually might have been painful, I guess?')
 
         if user == interaction.user:
@@ -141,8 +141,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='poke', description='Pokes another user, if you want to')
     async def poke(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'poke'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'poke'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text='Is it annoying to keep poking people?')
 
         if user == interaction.user:
@@ -156,8 +156,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='cuddle', description='Stop being annoying, cuddle with someone instead')
     async def cuddle(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.nekos_gif = 'cuddle'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'cuddle'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text="That was one of the most cute things I've ever seen")
 
         if user == interaction.user:
@@ -171,8 +171,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='lick', description='Licks another user or even yourself')
     async def lick(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.kawaii_gif = 'lick'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'lick'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text='How does it taste?')
 
         if user == interaction.user:
@@ -190,8 +190,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='stomp', description='Stomps another user, be careful to not hurt them')
     async def stomp(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.kawaii_gif = 'stomp'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'stomp'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="Looks like it's hurting... but it's funny to watch~")
 
         if user == interaction.user:
@@ -205,8 +205,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='boop', description="boop another user, that's it")
     async def boop(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.kawaii_gif = 'boop'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'boop'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="Hey~ this is funny hehe~")
 
         if user == interaction.user:
@@ -220,8 +220,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='glare', description='why are you glaring at me?')
     async def glare(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.tenor_gif = 'anime glare'
-        embed.set_image(url=str(searchers.tenor()))
+        helpers.tenor_gif = 'anime glare'
+        embed.set_image(url=str(helpers.tenor()))
         embed.set_footer(text="Someone's glaring so much~")
 
         if user == interaction.user:
@@ -235,8 +235,8 @@ class RolePlay(commands.GroupCog, name="rp"):
     @app_commands.command(name='spank', description='spanks someone!')
     async def spank(self, interaction: discord.Interaction, *, user: discord.Member):
 
-        searchers.tenor_gif = 'anime spank'
-        embed.set_image(url=str(searchers.tenor()))
+        helpers.tenor_gif = 'anime spank'
+        embed.set_image(url=str(helpers.tenor()))
         embed.set_footer(text="Looks like someone's has been naughty...")
 
         if user == interaction.user:

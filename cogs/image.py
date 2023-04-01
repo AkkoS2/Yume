@@ -1,8 +1,8 @@
 # bibliotecas
-from helpers.assets import embed
+from utils.assets import embed
 from discord.ext import commands
 from discord import app_commands
-from helpers import searchers
+from utils import helpers
 import discord
 import hmtai
 
@@ -21,8 +21,8 @@ class Image(commands.Cog):
     @app_commands.command(name='reddit', description='Gets a image from the chosen subreddit')
     async def reddit(self, interaction: discord.Interaction, *, subreddit: str):
 
-        searchers.sub_reddit = subreddit
-        result = await searchers.reddit_search()
+        helpers.sub_reddit = subreddit
+        result = await helpers.reddit_search()
 
         if result[2] is True and result[1] is False and not interaction.channel.is_nsfw():
             await interaction.response.send_message("Looks like the post I got is tagged as NSFW and the channel isn't", ephemeral=True)
@@ -40,21 +40,21 @@ class Image(commands.Cog):
 
         if result[1] is True:
             embed.set_author(name=result[3], url='https://reddit.com' + result[4])
-            embed.set_footer(text=result[5] + f'on r/{subreddit}')
+            embed.set_footer(text=result[5] + f' on r/{subreddit}')
             embed.set_image(url=str(result[0]))
             await interaction.response.send_message(embed=embed)
 
         elif result[1] is False and interaction.channel.is_nsfw():
             embed.set_author(name=result[3], url='https://reddit.com' + result[4])
-            embed.set_footer(text=result[5] + f'on r/{subreddit}')
+            embed.set_footer(text=result[5] + f' on r/{subreddit}')
             embed.set_image(url=str(result[0]))
             await interaction.response.send_message(embed=embed)
 
     # nekos
-    @app_commands.command(name='neko', description="I'll give you a random neko image!")
+    @app_commands.command(name='neko', description='Want some neko images?')
     async def neko(self, interaction: discord.Interaction):
 
-        neko = hmtai.get(source="hmtai", category="neko_arts")
+        neko = hmtai.get("hmtai", "neko")
         await interaction.response.send_message(neko)
 
 

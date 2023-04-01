@@ -1,5 +1,5 @@
 # bibliotecas
-from helpers.envkeys import deepai_key
+from utils.envkeys import deepai_key
 from discord.ext import commands
 from discord import app_commands
 from PIL import Image
@@ -24,12 +24,6 @@ class Utility(commands.Cog):
 
         ping = round(self.yume.latency * 1000)
         await interaction.response.send_message(f'I think it is **{ping}ms**, maybe?')
-
-    # yume
-    @app_commands.command(name='yume', description='Check if everything is fine')
-    async def yume(self, interaction: discord.Interaction):
-
-        await interaction.response.send_message(f'Everything looks fine here, no problems!', ephemeral=True)
 
     # avatar
     @app_commands.command(name='avatar', description="Sends a embed with the user's avatar")

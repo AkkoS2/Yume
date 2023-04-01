@@ -1,6 +1,6 @@
 # bibliotecas
-from helpers.texts import status, dont_exist
-from helpers.envkeys import yume_key, app_id
+from utils.texts import status, dont_exist
+from utils.envkeys import yume_key, app_id
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
 from itertools import cycle

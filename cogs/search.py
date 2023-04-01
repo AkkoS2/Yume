@@ -1,9 +1,8 @@
 # bibliotecas
-from helpers.envkeys import rapid_api, exrate_api
-from mcstatus import JavaServer, BedrockServer
+from utils.envkeys import rapid_api, exrate_api
 from discord.ext import commands
 from discord import app_commands
-from helpers import searchers
+from utils import helpers
 import requests
 import discord
 
@@ -27,8 +26,8 @@ class Search(commands.Cog):
     @app_commands.command(name='spotify', description='Search something in spotify')
     async def spotfy(self, interaction: discord.Interaction, *, kind: discord.app_commands.Choice[int], search: str):
 
-        searchers.spotify = search
-        result = searchers.spotify_search()
+        helpers.spotify = search
+        result = helpers.spotify_search()
 
         if kind.value == 0:
             await interaction.response.send_message(result[0])

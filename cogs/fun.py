@@ -1,8 +1,8 @@
 # bibliotecas
-from helpers.texts import eightball
+from utils.texts import eightball
 from discord.ext import commands
 from discord import app_commands
-from helpers.assets import embed
+from utils.assets import embed
 from uwuipy import uwuipy
 import discord
 import Joking
@@ -25,7 +25,7 @@ class Fun(commands.Cog):
     async def fortune(self, interaction: discord.Interaction):
 
         cookie = discord.File('./media/cookie.gif', filename='cookie.gif')
-        lines = open('./helpers/fortunes.txt').read().splitlines()
+        lines = open('./utils/fortunes.txt').read().splitlines()
         fortune = random.choice(lines)
 
         embed.set_author(name=fortune, icon_url=interaction.user.avatar.url)
@@ -81,7 +81,7 @@ class Fun(commands.Cog):
         result = random.choice(toss)
         coin = discord.File('./media/Coin.gif', filename='Coin.gif')
 
-        f = open('./helpers/urlgifs.json')
+        f = open('./utils/urlgifs.json')
         data = json.load(f)
 
         if value == 100:

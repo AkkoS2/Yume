@@ -1,8 +1,8 @@
 # bibliotecas
 from discord.ext import commands
 from discord import app_commands
-from helpers.assets import embed
-from helpers import searchers
+from utils.assets import embed
+from utils import helpers
 import discord
 import random
 import json
@@ -23,8 +23,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='smug', description='Show your smugness')
     async def smug(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.nekos_gif = 'smug'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'smug'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text='So much smugness!')
 
         if user is None or user == interaction.user:
@@ -38,8 +38,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='party', description="It's a party")
     async def party(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'party'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'party'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text='I wonder if parties are fun?')
 
         if user is None or user == interaction.user:
@@ -53,8 +53,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='kill', description="People die if they are killed...")
     async def kill(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'kill'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'kill'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text='Why you have to do this?')
 
         if user is None or user == interaction.user:
@@ -68,8 +68,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='clap', description='Applause for no reason')
     async def clap(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'clap'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'clap'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text='Claps are too loud for me but, continue as you like!')
 
         if user is None or user == interaction.user:
@@ -83,8 +83,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='dance', description='Looks like you like dancing...')
     async def dance(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.nekos_gif = 'dance'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'dance'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text="Yume doesn't know how to dance, so i'm gonna keep watching")
 
         if user is None or user == interaction.user:
@@ -98,8 +98,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='shame', description="i'm ashamed... and it's somebody's fault.")
     async def shame(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'shame'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'shame'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="that's kinda cringe, not gonna lie")
 
         if user is None or user == interaction.user:
@@ -113,8 +113,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='facepalm', description="facepalm because that was dumb")
     async def facepalm(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'facepalm'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'facepalm'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="that's uh... nevermind...")
 
         if user is None or user == interaction.user:
@@ -128,8 +128,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='laugh', description="everyone likes to laugh")
     async def laugh(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'laugh'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'laugh'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="hehe~")
 
         if user is None or user == interaction.user:
@@ -143,8 +143,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='pout', description="hmpf")
     async def pout(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.nekos_gif = 'pout'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'pout'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text="I'm not talking, hmpf!")
 
         if user is None or user == interaction.user:
@@ -158,8 +158,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='purr', description="nyaa~")
     async def purr(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'purr'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'purr'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="nyaa nyaan~")
 
         if user is None or user == interaction.user:
@@ -173,8 +173,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='shrug', description="i have no idea")
     async def shrug(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.nekos_gif = 'shrug'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'shrug'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text="i don't know, why?")
 
         if user is None or user == interaction.user:
@@ -188,8 +188,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='smile', description="happy times, hehe")
     async def smile(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.nekos_gif = 'smile'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'smile'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text="Happy times are so comfy~")
 
         if user is None or user == interaction.user:
@@ -203,8 +203,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='die', description="you're ded")
     async def die(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'die'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'die'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="Hey, I think this person just died, what do?")
 
         if user is None or user == interaction.user:
@@ -218,8 +218,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='wiggle', description="you like to wiggle")
     async def highfive(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'wiggle'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'wiggle'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="Wiggle again! Please!")
 
         if user is None or user == interaction.user:
@@ -233,8 +233,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='cry', description="sobs")
     async def cry(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.nekos_gif = 'cry'
-        embed.set_image(url=str(searchers.nekos_best()))
+        helpers.nekos_gif = 'cry'
+        embed.set_image(url=str(helpers.nekos_best()))
         embed.set_footer(text="What happened? Why are you crying?")
 
         if user is None or user == interaction.user:
@@ -248,8 +248,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='run', description="let's run away")
     async def run(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'run'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'run'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="Faster! Faster! You're too slow!")
 
         if user is None or user == interaction.user:
@@ -263,8 +263,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='highfive', description="high fives, and more high fives")
     async def highfive(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.kawaii_gif = 'highfive'
-        embed.set_image(url=str(searchers.kawaii_api()))
+        helpers.kawaii_gif = 'highfive'
+        embed.set_image(url=str(helpers.kawaii_api()))
         embed.set_footer(text="High Five! Do it again!")
 
         if user is None or user == interaction.user:
@@ -278,7 +278,7 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='arrest', description="Let's arrest someone!")
     async def arrest(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        f = open('./helpers/urlgifs.json')
+        f = open('./utils/urlgifs.json')
         data = json.load(f)
 
         embed.set_image(url=str(data['gifs']['arrest']['urls'][random.randint(0, 7)]))
@@ -295,7 +295,7 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='greet', description="Greets someone, that's it")
     async def greet(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        f = open('./helpers/urlgifs.json')
+        f = open('./utils/urlgifs.json')
         data = json.load(f)
 
         embed.set_image(url=str(data['gifs']['greet']['urls'][random.randint(0, 9)]))
@@ -312,8 +312,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='cheer', description='Do you want to cheer something or someone?')
     async def cheer(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.tenor_gif = 'cheer anime'
-        embed.set_image(url=str(searchers.tenor()))
+        helpers.tenor_gif = 'cheer anime'
+        embed.set_image(url=str(helpers.tenor()))
         embed.set_footer(text="Let's all do it together next time!")
 
         if user is None or user == interaction.user:
@@ -327,8 +327,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='sad', description='Be sad at someone or because of someone :c')
     async def sad(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.tenor_gif = 'sad anime'
-        embed.set_image(url=str(searchers.tenor()))
+        helpers.tenor_gif = 'sad anime'
+        embed.set_image(url=str(helpers.tenor()))
         embed.set_footer(text="I Wonder what happened...")
 
         if user is None or user == interaction.user:
@@ -342,8 +342,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='shy', description="Are you shy?? That's adorable...")
     async def shy(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.tenor_gif = 'shy anime'
-        embed.set_image(url=str(searchers.tenor()))
+        helpers.tenor_gif = 'shy anime'
+        embed.set_image(url=str(helpers.tenor()))
         embed.set_footer(text="You're so cute when you are shy~")
 
         if user is None or user == interaction.user:
@@ -357,8 +357,8 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='wag', description='Wanna wag at someone? I can help!')
     async def wag(self, interaction: discord.Interaction, user: discord.Member = None):
 
-        searchers.tenor_gif = 'wag anime'
-        embed.set_image(url=str(searchers.tenor()))
+        helpers.tenor_gif = 'wag anime'
+        embed.set_image(url=str(helpers.tenor()))
         embed.set_footer(text="That's.... cute....")
 
         if user is None or user == interaction.user:

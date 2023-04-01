@@ -155,6 +155,11 @@
   "CogImage": {
     "Reddit": [
       "Looks like the post I got is tagged as NSFW and the channel isn't"
+    ],
+    "AIGen": [
+      "**Please wait a moment... this might take a while**",
+      "The image is done! What do you think?",
+      "The link might break after a while, remember to safe if you liked it!"
     ]
   },
   "CogMathematics": {
