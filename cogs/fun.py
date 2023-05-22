@@ -73,7 +73,7 @@ class Fun(commands.Cog):
         discord.app_commands.Choice(name='Heads', value='heads'),
         discord.app_commands.Choice(name='Tails', value='tails')
     ])
-    @app_commands.command(name='coin', description="I'm gonna toss a coin, you will try to guess wich side it landed!")
+    @app_commands.command(name='coin', description="I'm gonna toss a coin, you will try to guess which side it landed!")
     async def coin(self, interaction: discord.Interaction, side: discord.app_commands.Choice[str]):
 
         value = random.randint(0, 100)

@@ -125,4 +125,8 @@ async def gel():
     print(lewd)
     print(lewd_rate)
     print(res)
-    return "a"
+    print('--------')
+    test = booru.resolve(res)
+    print(test[1])
+    print(test[1]['file_url'])
+    return "I'm sorry but this command is incomplete <:Bocchi30:1045496761956974613>"

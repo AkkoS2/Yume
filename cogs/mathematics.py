@@ -70,7 +70,7 @@ class Mathematics(commands.GroupCog, name='math'):
             await interaction.response.send_message(f"Looks like this number doesn't have a square root", ephemeral=True)
 
     # inverse square root
-    @app_commands.command(name='inv-square-root', description='An inverse square root... why not??')
+    @app_commands.command(name='inv-square-root', description="Just a Quake thingie, don't mind it~")
     async def invsqrt(self, interaction: discord.Interaction, *, number: float):
 
         try:

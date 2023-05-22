@@ -27,7 +27,8 @@ class NSFW(commands.Cog):
         discord.app_commands.Choice(name='Sensitive', value='sensitive'),
         discord.app_commands.Choice(name='Explicit', value='explicit')
     ])
-    @app_commands.command(name='gelbooru', description='You tell the tags, and Yume gives you a fresh NSFW image!')
+    @app_commands.command(name='gelbooru', description="This doesn't work yet... I'm sorry")
+    # You tell the tags, and Yume gives you a fresh NSFW image!
     async def gelbooru(self, interaction: discord.Interaction, *, rating: discord.app_commands.Choice[str], tags: str):
 
         helpers.lewd = tags.replace(" ", "_")
