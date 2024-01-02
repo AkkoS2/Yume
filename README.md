@@ -11,8 +11,6 @@ You are 100% allowed to have a self-hosted version of Yume under the following c
 
 <ul>
     <li> Your self-hosted instance <strong>MUST</strong> be <strong>PRIVATE</strong>.
-    <li> You understand and agree to not submit any features, pull requests, or issues related to self-hosting.
-    <li> You understand that no support will be provided to aid your private instance of the bot.
     <li> Your self-hosted instance must not be listed on any sort of public bot listing.
 </ul>
 
