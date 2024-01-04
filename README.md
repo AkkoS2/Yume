@@ -1,9 +1,9 @@
 <h1 align="center"> Yume </h1>
 
-<p align="center"> Yume is a discord bot with the focus of being able to do a little of everything. </p>
+<p align="center"> Yume is a discord bot with the focus of being able to do a little of everything, but focused on entertainmet commands. </p>
 Currently in development, Yume is entirely build with focus to work using the discord slash commands or application commands. With a vast variety of commands planned to be made in the near and far future, as a long plan development might be possible.
 
-You can also see all the planned commands and their development status by simply clicking <a href="https://github.com/users/AkkoS2/projects/8/views/1"> HERE </a>
+You can also see all the planned commands and their development status by clicking <a href="https://github.com/users/AkkoS2/projects/8/views/1"> HERE </a>
 
 <h2 align="center"> Self-hosting </h2>
 
@@ -46,4 +46,5 @@ You are 100% allowed to have a self-hosted version of Yume under the following c
 This is my first project and, so if you have any suggestions or ideas for new commands, you can tell them to me and I will analyze then carefully.
 Yume will be builded as carefully as possible, so it can be used with zero worries. Thanks for the attention!
 
-<h6>Thank you so much <a href="https://github.com/reggi">Thomas Reggi</a>! for allowing me to use your fortune cookies list.</h6>
+<h5 align=center> Special Thanks </h5>
+<h6><a href="https://github.com/reggi">Thomas Reggi</a>! for allowing me to use your fortune cookies list.</h6>
