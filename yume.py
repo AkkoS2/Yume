@@ -22,13 +22,13 @@ class YumeBot(commands.AutoShardedBot):
     # Mensagem de erro para o usuário que tentar usar o prefixo
     async def on_command_error(self, ctx, error):
         if isinstance(error, commands.CommandNotFound):
-            await ctx.reply('Placeholder', ephemeral=True)
+            await ctx.reply("You can't use this command.", ephemeral=True)
 
 
 # Definindo status da Yume e removendo o comando help padrão
 yume = YumeBot()
 yume.remove_command('help')
-status = "I'm watching you~"
+status = open('./texts/status.txt').read().splitlines()
 
 
 # Bloqueia o comando de acordo com o ID do usuário
@@ -39,7 +39,7 @@ def id_lock(ctx):
 # Realiza a inicialização dos status da Yume
 @tasks.loop(seconds=10)
 async def yume_status():
-    await yume.change_presence(activity=discord.Game(name='Placeholder'))
+    await yume.change_presence(activity=discord.Game(name=random.choice(status)), status=discord.Status.idle)
 
 
 @yume.event
