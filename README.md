@@ -15,9 +15,9 @@ You are 100% allowed to have a self-hosted version of Yume under the following c
 Soon™ (I'm still planning it)
 
 ## Changelog
-- Adjusted the base code lines for the bot.
-- Recreated the first "command" again.
-- Yume is now using .txt files to store texts that won't be localised.
+- Changed the organization of folders and files.
+- All GitHub related commands are now meshed into one single command.
+- Embeds and Buttons now have their own separated files.
 
 ## Have a suggestion?
 If you have any suggestions or ideas for new commands, you can tell them to me and I will analyze then carefully. Thanks for the attention!
