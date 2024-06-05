@@ -1,6 +1,7 @@
 # Bibliotecas utilizadas para o arquivo principal funcionar corretamente
 from utils.envkeys import yume_key, app_id
 from discord.ext import commands, tasks
+from utils.logger import YLogger
 from dotenv import load_dotenv
 from itertools import cycle
 import discord
@@ -66,6 +67,7 @@ async def synctree(ctx):
 async def main():
     await on_ready()
     await load_cog()
+    YLogger()
 
     print("Yume is Online!!")
     await yume.start(yume_key())
