@@ -21,8 +21,7 @@ class Fun(commands.Cog):
     async def fortune(self, interaction: discord.Interaction):
 
         cookie = discord.File('./media/cookie.gif', filename='cookie.gif')
-        lines = open('./texts/fortunes.txt').read().splitlines()
-        fortune = random.choice(lines)
+        fortune = random.choice(open('./texts/fortunes.txt').read().splitlines())
 
         embed = GenericEmbed.embed
         embed.set_author(name=fortune, icon_url=interaction.user.avatar.url)
@@ -47,6 +46,13 @@ class Fun(commands.Cog):
             await interaction.response.send_message(f'**{points}!! WYSI!! WYFSI!!!!!**')
 
         await interaction.response.send_message(f"You've got **{points}** points! what do you think?? wanna try again?")
+
+    # 8Ball
+    @app_commands.command(name='8ball', description='Let the almighty 8Ball answer your questions~')
+    async def eightball(self, interaction: discord.Interaction, *, question: str):
+
+        answers = random.choice(open('./texts/8ball.txt').read().splitlines())
+        await interaction.response.send_message(answers)
 
 
 # Realiza o registro da classe nos cogs

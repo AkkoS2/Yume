@@ -1,4 +1,4 @@
-# Bibliotecas Utilizadas
+# Bibliotecas utilizadas neste arquivo
 import discord
 
 

@@ -1,4 +1,4 @@
-# Bibliotecas Utilizadas
+# Bibliotecas utilizadas neste arquivo
 from discord.ui import Button, View
 import discord
 

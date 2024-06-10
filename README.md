@@ -1,4 +1,4 @@
-# The Yume Project
+# Yume Bot
 
 Yume is a discord bot with the focus of being able to do a bit of everything, but focused on entertainment commands.
 
@@ -15,9 +15,10 @@ You are 100% allowed to have a self-hosted version of Yume under the following c
 Soon™ (I'm still planning it)
 
 ## Changelog
-- Yume finally have logs!!.
-- A few old commands are working again.
-- The Media folder with images for specific commands is back for now.
+- Reddit command is working again.
+- Reduced the json mess that was the reddit command.
+- Some planned and discarded commands will be transfered to another bots.
+- 8Ball command is back.
 
 ## Have a suggestion?
 If you have any suggestions or ideas for new commands, you can tell them to me and I will analyze then carefully. Thanks for the attention!
