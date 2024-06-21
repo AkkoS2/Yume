@@ -6,6 +6,7 @@ import json
 
 # Variáveis Globais
 sub_reddit = None
+nekos_gif = None
 
 
 # Reddit Search
@@ -46,3 +47,13 @@ async def reddit_search():
         else:
             img_url = base_path['url']
             return img_url, is_safe, is_video, title, post_link, author
+
+
+# Nekos.best
+async def nekos_best():
+
+    async with aiohttp.ClientSession() as session:
+        async with session.get(f"https://nekos.best/api/v2/{nekos_gif}") as r:
+            data = await r.json()
+
+        return data['results'][0]['url']

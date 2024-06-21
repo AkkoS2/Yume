@@ -15,10 +15,10 @@ You are 100% allowed to have a self-hosted version of Yume under the following c
 Soon™ (I'm still planning it)
 
 ## Changelog
-- Reddit command is working again.
-- Reduced the json mess that was the reddit command.
-- Some planned and discarded commands will be transfered to another bots.
-- 8Ball command is back.
+- Added Buttons.
+- More Buttons.
+- And some Buttons.
+- The Buttons will be permanent in the future, as a way to interact with the commands.
 
 ## Have a suggestion?
 If you have any suggestions or ideas for new commands, you can tell them to me and I will analyze then carefully. Thanks for the attention!
@@ -28,6 +28,6 @@ If you have any suggestions or ideas for new commands, you can tell them to me a
 - I do not own any rights to the images utilized here, all images are propriety of their own artists, I don't plan to use them to make any profit.
 - If you are the owner of one or, some of the images and, want them removed, please send a message to me and It will be done right away.
 
-### Special Thanks
+### Many Thanks To:
 
 - [Thomas Reggi](https://github.com/reggi)! for allowing me to use your fortune cookie list.
