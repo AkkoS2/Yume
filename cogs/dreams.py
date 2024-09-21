@@ -1,7 +1,8 @@
 # Bibliotecas utilizadas neste arquivo
-from utils import embeds, buttons
+from utils.embeds import GenericEmbed, InfoEmbed
 from discord.ext import commands
 from discord import app_commands
+from utils import modals
 import discord
 
 
@@ -22,12 +23,32 @@ class Dreams(commands.GroupCog, name='yume'):
 
         await interaction.response.send_message('Everything seems fine~', ephemeral=True)
 
-    # GitHub Information
-    @app_commands.command(name='github', description="If you want to see my source code for some reason~")
-    async def repository(self, interaction: discord.Interaction):
+    # Information
+    @app_commands.command(name='info', description="Yume's useful things and links")
+    async def info(self, interaction: discord.Interaction):
 
-        await interaction.response.send_message(embed=embeds.GitEmbed.git_embed, view=buttons.GitButtons.view,
-                                                ephemeral=True)
+        await interaction.response.send_message(embed=InfoEmbed.iembed, ephemeral=True)
+
+    # Typo Report
+    @app_commands.command(name='typo', description="a way to report any typos you've found so far!")
+    async def typo(self, interaction: discord.Interaction):
+
+        typo = modals.TypoModal()
+        await interaction.response.send_modal(typo)
+
+    # Suggestions
+    @app_commands.command(name='suggestion', description="you can give suggestions on how to improve me!")
+    async def suggestion(self, interaction: discord.Interaction):
+
+        suggestion = modals.SuggestionModal()
+        await interaction.response.send_modal(suggestion)
+
+    # Command Ideas
+    @app_commands.command(name='ideas', description="have any command ideas? share them with me~")
+    async def ideas(self, interaction: discord.Interaction):
+
+        ideas = modals.IdeaModal()
+        await interaction.response.send_modal(ideas)
 
 
 # Realiza o registro da classe nos cogs

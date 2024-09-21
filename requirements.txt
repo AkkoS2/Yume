@@ -1,4 +1,5 @@
 python-dotenv==1.0.1
 discord.py==2.3.2
 discord==2.3.2
-aiohttp==3.10.2
+aiohttp==3.9.5
+uwuipy==0.1.9

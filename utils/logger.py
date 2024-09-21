@@ -11,7 +11,7 @@ class YLogger:
     logging.getLogger('discord.http').setLevel(logging.INFO)
 
     handler = logging.handlers.RotatingFileHandler(
-        filename='log-yume.log',
+        filename='utils/log-yume.txt',
         encoding='utf-8',
         maxBytes=32 * 1024 * 1024,
         backupCount=5

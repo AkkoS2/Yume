@@ -1,8 +1,8 @@
 # Bibliotecas utilizadas neste arquivo
-from utils.buttons import ActionButtons
 from discord.ext import commands
 from discord import app_commands
 from utils import helpers
+from utils import buttons
 import discord
 
 
@@ -21,12 +21,7 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='smug', description='Show your smugness~')
     async def smug(self, interaction: discord.Interaction):
 
-        helpers.nekos_gif = 'smug'
-        embed = discord.Embed(color=discord.Color.random(), description=f'{interaction.user.display_name} is smugging~')
-        embed.set_image(url=str(await helpers.nekos_best()))
-        embed.set_footer(text='So much smugness!')
-
-        await interaction.response.send_message(embed=embed)
+        await interaction.response.send_message("Action commands are currently being reworked :c")
 
     # Party
 

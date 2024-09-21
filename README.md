@@ -15,10 +15,10 @@ You are 100% allowed to have a self-hosted version of Yume under the following c
 Soon™ (I'm still planning it)
 
 ## Changelog
-- Added Buttons.
-- More Buttons.
-- And some Buttons.
-- The Buttons will be permanent in the future, as a way to interact with the commands.
+- Models.
+- Bad codding.
+- Roleplay commands.
+- UWU.
 
 ## Have a suggestion?
 If you have any suggestions or ideas for new commands, you can tell them to me and I will analyze then carefully. Thanks for the attention!

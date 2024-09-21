@@ -3,7 +3,6 @@ from utils.envkeys import yume_key, app_id
 from discord.ext import commands, tasks
 from utils.logger import YLogger
 from dotenv import load_dotenv
-from itertools import cycle
 import discord
 import asyncio
 import random
