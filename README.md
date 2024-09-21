@@ -15,7 +15,7 @@ You are 100% allowed to have a self-hosted version of Yume under the following c
 Soon™ (I'm still planning it)
 
 ## Changelog
-- Models.
+- Modals.
 - Bad codding.
 - Roleplay commands.
 - UWU.
