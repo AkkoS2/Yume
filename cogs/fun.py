@@ -55,7 +55,7 @@ class Fun(commands.Cog):
         answers = random.choice(open('./texts/8ball.txt').read().splitlines())
         await interaction.response.send_message(answers)
 
-    # uwuify
+    # Uwuify
     @app_commands.command(name='uwuify', description='it makes you s-s-speak w-wike (˘ε˘) t-t-t-this?!?!')
     async def uwuify(self, interaction: discord.Interaction, *, phrase: str):
 

@@ -15,10 +15,9 @@ You are 100% allowed to have a self-hosted version of Yume under the following c
 Soon™ (I'm still planning it)
 
 ## Changelog
-- Modals.
+- Cleaner code on embeds.py.
 - Bad codding.
-- Roleplay commands.
-- UWU.
+- Text file containing all the used links.
 
 ## Have a suggestion?
 If you have any suggestions or ideas for new commands, you can tell them to me and I will analyze then carefully. Thanks for the attention!
