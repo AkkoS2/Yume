@@ -1,7 +1,6 @@
 # Bibliotecas utilizadas neste arquivo
 from discord.ext import commands
 from discord import app_commands
-from utils import helpers
 from utils import buttons
 import discord
 

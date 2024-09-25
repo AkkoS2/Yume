@@ -1,6 +1,7 @@
 # Bibliotecas utilizadas neste arquivo
 from discord.ext import commands
 from discord import app_commands
+from utils import helpers
 import discord
 
 
@@ -34,6 +35,15 @@ class Utility(commands.Cog):
             avatar.set_author(name=f"This is {user.name}'s avatar! Cute isn't it?")
 
         await interaction.response.send_message(embed=avatar)
+
+    # Currency
+    @app_commands.command(name='currency', description="Let's you see the currency values")
+    async def currency(self, interaction: discord.Interaction, *, currency1: str, amount: int, currency2: str):
+
+        helpers.values = currency1, currency2, amount
+        result = await helpers.currency_finder()
+
+        await interaction.response.send_message(f"Yume thinks that **{amount} {currency1.upper()}** is equal to **{result} {currency2.upper()}**!!", ephemeral=True)
 
 
 # Realiza o registro da classe nos cogs

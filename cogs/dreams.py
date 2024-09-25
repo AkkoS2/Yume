@@ -30,25 +30,18 @@ class Dreams(commands.GroupCog, name='yume'):
         await interaction.response.send_message(embed=InfoEmbed.iembed, ephemeral=True)
 
     # Typo Report
-    @app_commands.command(name='typo', description="a way to report any typos you've found so far!")
+    @app_commands.command(name='typo', description="A way to report any typos you've found so far!")
     async def typo(self, interaction: discord.Interaction):
 
         typo = modals.TypoModal()
         await interaction.response.send_modal(typo)
 
     # Suggestions
-    @app_commands.command(name='suggestion', description="you can give suggestions on how to improve me!")
+    @app_commands.command(name='suggestion', description="With this command you can give Yume your suggestions!")
     async def suggestion(self, interaction: discord.Interaction):
 
         suggestion = modals.SuggestionModal()
         await interaction.response.send_modal(suggestion)
-
-    # Command Ideas
-    @app_commands.command(name='ideas', description="have any command ideas? share them with me~")
-    async def ideas(self, interaction: discord.Interaction):
-
-        ideas = modals.IdeaModal()
-        await interaction.response.send_modal(ideas)
 
 
 # Realiza o registro da classe nos cogs

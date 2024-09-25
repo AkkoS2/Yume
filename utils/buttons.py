@@ -21,15 +21,3 @@ shy_button = Button(label="I'm also blushy...", style=discord.ButtonStyle.blurpl
 bribe_button = Button(label="Try giving them a bribe", style=discord.ButtonStyle.blurple)
 sad_button = Button(label="So sad...", style=discord.ButtonStyle.blurple)
 wave_button = Button(label="Wave to them", style=discord.ButtonStyle.blurple)
-
-
-view_smug = View()
-view_smug.add_item(smug_button)
-view_smug.add_item(stare_button)
-view_smug.add_item(laugh_button)
-
-
-view_party = View()
-view_party.add_item(party_button)
-view_party.add_item(leave_button)
-view_party.add_item(stare_button)

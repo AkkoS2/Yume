@@ -1,4 +1,6 @@
 # Bibliotecas utilizadas neste arquivo
+from utils.envkeys import dogs_key, cats_key
+from bs4 import BeautifulSoup
 import aiohttp
 import random
 import json
@@ -7,6 +9,8 @@ import json
 # Variáveis Globais
 sub_reddit = None
 nekos_gif = None
+values = None
+dogcat = None
 
 
 # Reddit Search
@@ -57,3 +61,31 @@ async def nekos_best():
             data = await r.json()
 
         return data['results'][0]['url']
+
+
+# Currency Finder
+async def currency_finder():
+
+    async with aiohttp.ClientSession() as session:
+        async with session.get(f"https://x-rates.com/calculator/?from={values[0]}&to={values[1]}&amount={values[2]}") as r:
+            data = await r.text()
+
+            little_soup = BeautifulSoup(data, 'html.parser')
+            value = little_soup.find("span", class_="ccOutputRslt").get_text()
+
+            return value[:-7]
+
+
+# Cats and Dogs
+async def catdog():
+
+    if dogs_key == "thedogapi":
+        key = dogs_key()
+    else:
+        key = cats_key()
+
+    async with aiohttp.ClientSession() as session:
+        async with session.get(f"https://api.{dogcat}.com/v1/images/search?limit=10&api_key={key}") as r:
+            data = await r.json()
+
+            return data[random.randint(0, 9)]['url']

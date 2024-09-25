@@ -1,6 +1,4 @@
 # bibliotecas
-from discord.ext.commands import bot
-
 from utils.embeds import GenericEmbed
 from discord.ext import commands
 from discord import app_commands
@@ -100,7 +98,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'stare'
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
-        GenericEmbed.embed.set_footer(text='Careful to not stare too much, they may notice it...')
+        GenericEmbed.embed.set_footer(text='Be careful not to stare for too long - they might notice!')
 
         if user == interaction.user:
             GenericEmbed.embed.set_author("I'm gonna stare at you then... please don't look away!")
@@ -115,10 +113,10 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'shoot'
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
-        GenericEmbed.embed.set_footer(text="Oh my God, are you okay? I'm calling a ambulance, stay strong, please!")
+        GenericEmbed.embed.set_footer(text="Oh my God, are you okay? I'm calling an ambulance, stay strong, please!")
 
         if user == interaction.user:
-            GenericEmbed.embed.set_author("I wasn't wanting to shoot you but, that might be.... hehe~")
+            GenericEmbed.embed.set_author("Suuuree.... hehe~")
             await interaction.response.send_message(embed=GenericEmbed.embed)
 
         GenericEmbed.embed.set_author(name=f"{user.display_name} just got shot by {interaction.user.display_name}!!! Should we call the police?")

@@ -1,5 +1,5 @@
 # Bibliotecas utilizadas neste arquivo
-from utils.envkeys import typohook, sugghook, ideahook
+from utils.envkeys import typohook, sugghook
 from discord import Webhook, SyncWebhook
 from discord.ext import commands
 from datetime import datetime
@@ -78,44 +78,6 @@ class SuggestionModal(discord.ui.Modal, title="Have any suggestion to me?"):
 
             await webhook.send(embed=sugg_e)
             await interaction.response.send_message("Thanks for the suggestion! Yume's gonna take good care of it!", ephemeral=True)
-
-    async def on_error(self, interaction: discord.Interaction, error):
-        await interaction.response.send_message("I think something went wrong with me, it's not your fault, don't worry!", ephemeral=True)
-
-
-class IdeaModal(discord.ui.Modal, title="If you have some cool ideas for commands!"):
-
-    idea_title = discord.ui.TextInput(
-        style=discord.TextStyle.short,
-        label="Give it a Name!",
-        required=True,
-        max_length=100,
-        placeholder="What's the name of your idea?")
-
-    idea_message = discord.ui.TextInput(
-        style=discord.TextStyle.long,
-        label="If added, how you think it should work?",
-        required=True,
-        max_length=500,
-        placeholder="Explain it to me bit more!"
-    )
-
-    async def on_submit(self, interaction: discord.Interaction):
-
-        async with aiohttp.ClientSession() as session:
-
-            webhook = Webhook.from_url(f"https://discord.com/api/webhooks/{ideahook()}", session=session)
-
-            now = datetime.now()
-            idea_e = discord.Embed(color=discord.Color.random())
-            idea_e.set_author(name=self.idea_title.value, icon_url=interaction.user.avatar.url)
-            idea_e.add_field(name="Command Idea:", value=f"{self.idea_message.value}", inline=False)
-            idea_e.add_field(name="Submitted By:", value=f"{interaction.user.name}", inline=False)
-            idea_e.add_field(name="UserID", value=f"{interaction.user.id}", inline=False)
-            idea_e.set_footer(text=f"Submitted at: {now.strftime('%Y/%m/%d - %H:%M:%S')}")
-
-            await webhook.send(embed=idea_e)
-            await interaction.response.send_message("Thanks for giving Yume a new command idea!", ephemeral=True)
 
     async def on_error(self, interaction: discord.Interaction, error):
         await interaction.response.send_message("I think something went wrong with me, it's not your fault, don't worry!", ephemeral=True)

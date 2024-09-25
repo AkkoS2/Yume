@@ -21,5 +21,9 @@ def sugghook():
     return os.environ.get("SUGGHOOK")
 
 
-def ideahook():
-    return os.environ.get("IDEAHOOK")
+def cats_key():
+    return os.environ.get("CAT_API")
+
+
+def dogs_key():
+    return os.environ.get("DOG_API")
