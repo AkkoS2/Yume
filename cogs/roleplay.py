@@ -41,6 +41,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'slap'
         view = buttons.PingButton()
+        buttons.pinged_one = user.mention
 
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
         GenericEmbed.embed.set_footer(text='That was funny... hehe~')
@@ -58,6 +59,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'kiss'
         view = buttons.PingButton()
+        buttons.pinged_one = user.mention
 
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
         GenericEmbed.embed.set_footer(text='It was really cute!')
@@ -75,6 +77,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'pat'
         view = buttons.PingButton()
+        buttons.pinged_one = user.mention
 
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
         GenericEmbed.embed.set_footer(text='Everyone should receive a little pat!')
@@ -92,6 +95,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'bite'
         view = buttons.PingButton()
+        buttons.pinged_one = user.mention
 
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
         GenericEmbed.embed.set_footer(text='Does it hurt? Maybe it was too strong?')
@@ -109,6 +113,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'stare'
         view = buttons.PingButton()
+        buttons.pinged_one = user.mention
 
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
         GenericEmbed.embed.set_footer(text='Be careful not to stare for too long - they might notice!')
@@ -126,6 +131,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'shoot'
         view = buttons.PingButton()
+        buttons.pinged_one = user.mention
 
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
         GenericEmbed.embed.set_footer(text="Oh my God, are you okay? I'm calling an ambulance, stay strong, please!")
@@ -143,6 +149,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'punch'
         view = buttons.PingButton()
+        buttons.pinged_one = user.mention
 
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
         GenericEmbed.embed.set_footer(text='That actually might have been painful, I guess?')
@@ -160,6 +167,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'poke'
         view = buttons.PingButton()
+        buttons.pinged_one = user.mention
 
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
         GenericEmbed.embed.set_footer(text='Is it annoying to keep poking people?')
@@ -177,6 +185,7 @@ class RolePlay(commands.GroupCog, name='rp'):
 
         helpers.nekos_gif = 'cuddle'
         view = buttons.PingButton()
+        buttons.pinged_one = user.mention
 
         GenericEmbed.embed.set_image(url=str(await helpers.nekos_best()))
         GenericEmbed.embed.set_footer(text="That's the sweetest thing i've seen~")
