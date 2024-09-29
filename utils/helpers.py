@@ -79,7 +79,7 @@ async def currency_finder():
 # Cats and Dogs
 async def catdog():
 
-    if dogs_key == "thedogapi":
+    if dogcat == "thedogapi":
         key = dogs_key()
     else:
         key = cats_key()

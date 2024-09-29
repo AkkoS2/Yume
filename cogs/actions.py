@@ -20,7 +20,7 @@ class Actions(commands.GroupCog, name='action'):
     @app_commands.command(name='smug', description='Show your smugness~')
     async def smug(self, interaction: discord.Interaction):
 
-        await interaction.response.send_message("Action commands are currently being reworked :c")
+        await interaction.response.send_message("Action commands are currently being reworked :c", view=view)
 
     # Party
 
