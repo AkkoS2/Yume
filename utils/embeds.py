@@ -30,6 +30,10 @@ class InfoEmbed:
     iembed.add_field(name="🔗 Invite Link:", value=f"{extemoji}[Invite Page]({invlink})", inline=False)
 
 
-class GenericEmbed:
+class RpEmbed:
 
+    embed = discord.Embed(color=discord.Color.random())
+
+
+class ImgEmbed:
     embed = discord.Embed(color=discord.Color.random())

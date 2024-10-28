@@ -39,7 +39,7 @@ def id_lock(ctx):
 # Realiza a inicialização dos status da Yume
 @tasks.loop(seconds=10)
 async def yume_status():
-    await yume.change_presence(activity=discord.Game(name=random.choice(status)), status=discord.Status.idle)
+    await yume.change_presence(activity=discord.Game(name=random.choice(status)), status=discord.Status.online)
 
 
 @yume.event

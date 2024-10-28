@@ -43,7 +43,9 @@ class Utility(commands.Cog):
         helpers.values = currency1, currency2, amount
         result = await helpers.currency_finder()
 
-        await interaction.response.send_message(f"Yume thinks that **{amount} {currency1.upper()}** is equal to **{result} {currency2.upper()}**!!", ephemeral=True)
+        await interaction.response.send_message(f"Yume thinks that {amount} {currency1} is equal to {result}!!!")
+
+    # Weather
 
 
 # Realiza o registro da classe nos cogs

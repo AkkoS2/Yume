@@ -56,6 +56,10 @@ class Actions(commands.GroupCog, name='action'):
 
     # Bribe
 
+    # Bark
+
+    # Meow
+
 
 # Realiza o registro da classe nos cogs
 async def setup(yume: commands.AutoShardedBot) -> None:

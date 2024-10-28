@@ -1,8 +1,9 @@
 # Bibliotecas utilizadas neste arquivo
-from utils.embeds import GenericEmbed
 from discord.ext import commands
 from discord import app_commands
+from utils import helpers
 from uwuipy import Uwuipy
+from utils import embeds
 import discord
 import random
 
@@ -24,7 +25,7 @@ class Fun(commands.Cog):
         cookie = discord.File('./media/cookie.gif', filename='cookie.gif')
         fortune = random.choice(open('./texts/fortunes.txt').read().splitlines())
 
-        embed = GenericEmbed.embed
+        embed = discord.Embed(color=discord.Color.random())
         embed.set_author(name=fortune, icon_url=interaction.user.avatar.url)
         embed.set_image(url="attachment://cookie.gif")
         embed.set_footer(text="And that's what the cookie said to Yume.")
@@ -61,6 +62,23 @@ class Fun(commands.Cog):
 
         uwu = Uwuipy(None, 0.3, 0.3, 0.10, 1, False, 4)
         await interaction.response.send_message(uwu.uwuify(phrase))
+
+    # Twitter Personality
+    @app_commands.command(name='twitter-personality', description='an AI generated personality of a twitter profile')
+    async def twt_persona(self, interaction: discord.Interaction, *, twitter_handle: str):
+
+        helpers.profile = twitter_handle
+        result = await helpers.twtpersonality()
+
+        embed = discord.Embed(title=f"{result[1]}", url=f"https://x.com/{twitter_handle}", description=f"{result[2]}", color=discord.Color.random())
+        embed.set_author(name="Wordware Twitter Personality", url=f"https://twitter.wordware.ai/{twitter_handle}", icon_url=embeds.txtlink[6])
+        embed.set_thumbnail(url=f"{result[0]['src']}")
+
+        await interaction.response.send_message(embed=embed, ephemeral=True)
+
+    # Twitter Compatibility
+
+    # Ship
 
 
 # Realiza o registro da classe nos cogs

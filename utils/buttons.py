@@ -27,7 +27,7 @@ pinged_one = None
 
 class PingButton(discord.ui.View):
 
-    @discord.ui.button(label="Ping user", style=discord.ButtonStyle.blurple)
+    @discord.ui.button(label="Ping user", style=discord.ButtonStyle.blurple, emoji="<:GanyuPing:1300109261015224340>")
     async def ping_btn(self, interaction: discord.Interaction, button: discord.ui.Button):
 
         button.disabled = True

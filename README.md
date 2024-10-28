@@ -15,9 +15,11 @@ You are 100% allowed to have a self-hosted version of Yume under the following c
 Soon™ (I'm still planning it)
 
 ## Changelog
-- It's possible to ping users when using the Roleplay commands.
-- Fixed my dumbest mistake so far.
-- Fixed weird typos.
+- Fixed embeds.
+- Fixed dogs command.
+- Fixed currency command.
+- New command using Twitter Wordware Ai.
+- Fixed typos.
 
 ## Have a suggestion?
 If you have any suggestions or ideas for new commands, you can tell them to me and I will analyze then carefully. Thanks for the attention!

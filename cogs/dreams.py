@@ -1,5 +1,5 @@
 # Bibliotecas utilizadas neste arquivo
-from utils.embeds import GenericEmbed, InfoEmbed
+from utils.embeds import InfoEmbed
 from discord.ext import commands
 from discord import app_commands
 from utils import modals
@@ -42,6 +42,8 @@ class Dreams(commands.GroupCog, name='yume'):
 
         suggestion = modals.SuggestionModal()
         await interaction.response.send_modal(suggestion)
+
+    # Chat Restriction
 
 
 # Realiza o registro da classe nos cogs

@@ -23,7 +23,3 @@ def sugghook():
 
 def cats_key():
     return os.environ.get("CAT_API")
-
-
-def dogs_key():
-    return os.environ.get("DOG_API")
