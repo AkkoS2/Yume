@@ -74,7 +74,7 @@ class Fun(commands.Cog):
         embed.set_author(name="Wordware Twitter Personality", url=f"https://twitter.wordware.ai/{twitter_handle}", icon_url=embeds.txtlink[6])
         embed.set_thumbnail(url=f"{result[0]['src']}")
 
-        await interaction.response.send_message(embed=embed, ephemeral=True)
+        await interaction.response.send_message(embed=embed)
 
     # Twitter Compatibility
 
