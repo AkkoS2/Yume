@@ -18,6 +18,7 @@ Soon™ (I'm still planning it)
 - It's possible to ping users when using the Roleplay commands.
 - Fixed my dumbest mistake so far.
 - Fixed weird typos.
+
 ## Have a suggestion?
 If you have any suggestions or ideas for new commands, you can tell them to me and I will analyze then carefully. Thanks for the attention!
 
