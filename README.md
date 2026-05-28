@@ -1,3 +1,3 @@
-# Yume Bot
+# Yume's new Definivite Version
 
-Version 3 will be taking the place of v2 as the main version in the near future.
+Creating it by merging the best parts of previous versions and creating even more new features.
