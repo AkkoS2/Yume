@@ -1,0 +1,38 @@
+{
+    "gifs":{
+        "arrest":{
+            "urls":[
+                "https://media.tenor.com/96CbI5qQSXcAAAAC/handcuffs-arrested.gif",
+                "https://media.tenor.com/l6K4bgzL6k4AAAAC/kanna-arrest.gif",
+                "https://media.tenor.com/xJLbzjx3vhEAAAAC/handcuffs-brave-police-j-decker.gif",
+                "https://media.tenor.com/OsKB-upUiusAAAAC/anime-handcuffs.gif",
+                "https://media.tenor.com/cS3SW772LAkAAAAC/your-under-arrest-anime-fan27.gif",
+                "https://media.tenor.com/imgr8jx6wYQAAAAd/its-the-police-police.gif",
+                "https://media.tenor.com/u9Ca30xpEfgAAAAd/arrested-anime-arrest.gif",
+                "https://media.tenor.com/XWMW3wFucaoAAAAC/you-are-under-arrest-justice.gif"
+            ]
+        },
+        "greet":{
+            "urls":[
+                "https://media.tenor.com/1jbliqfE_hEAAAAC/anime-greet.gif",
+                "https://media.tenor.com/FJzcVnWgHjgAAAAC/wave.gif",
+                "https://media.tenor.com/uGN3n2O03GIAAAAC/anime-wave.gif",
+                "https://media.tenor.com/n1szpPp19d0AAAAC/yuigahama-yahallo.gif",
+                "https://media.tenor.com/eetnAeDdHHcAAAAC/hi.gif",
+                "https://media.tenor.com/7v9H8fvLGRMAAAAC/anime-hi.gif",
+                "https://media.tenor.com/ni8U2yRVTG0AAAAS/pino-ergo-proxy.gif",
+                "https://media.tenor.com/PQjRKrKQdpkAAAAS/yui-wave.gif",
+                "https://media.tenor.com/47a0RiMxzvAAAAAC/anime-kurumi-kumamakura.gif",
+                "https://media.tenor.com/5hMBrCqb5x4AAAAC/genshin-impact-hu-tao.gif"
+            ]
+        },
+        "toss":{
+            "urls": [
+                "https://64.media.tumblr.com/687811e69373e3121597e1b59cea29f1/tumblr_pmgxrnxLFz1se015qo1_540.gif",
+                "https://media.tenor.com/w_iZ6ojrKjsAAAAC/gambling-toss-coin.gif",
+                "https://acegif.com/wp-content/uploads/gifs/coin-flip-11.gif",
+                "https://c.tenor.com/-Ty-f7Ld7skAAAAM/anime-coinflip.gif"
+            ]
+        }
+    }
+}
