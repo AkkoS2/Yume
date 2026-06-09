@@ -1,4 +1,4 @@
-<h1 align="center">  🌸 Yume </h1>
+<h1 align="center">  Yume </h1>
 
 temp
 
