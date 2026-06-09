@@ -6,7 +6,7 @@ import json
 locales = {}
 
 
-def load(dir: str = "locales"):
+def localizations(dir: str = "locales"):
 
     global locales
     locales.clear()
@@ -33,7 +33,6 @@ def load(dir: str = "locales"):
                     locales[lang] = {}
 
                 try:
-
                     with open(filepath, "r", encoding="utf-8") as f:
                         locales[lang][category] = json.load(f)
                 
@@ -41,3 +40,21 @@ def load(dir: str = "locales"):
                     print(f"Não consegui carregar {filepath}: {e}. faz alguma coisa!! :c")
 
     print(f"Idiomas Carregados: {list(locales.keys())}")
+
+
+def get_language(lang: str, category: str, key: str, personality: str = None) -> str:
+
+    try:
+
+        if lang not in locales:
+            lang = "en"
+
+        data = locales[lang].get(category, {})
+
+        if personality and key in data and personality in data[key]:
+            return data[key][personality]
+
+        return data.get(key, f"Cadê meus textos? :c \n {category}.{key}")
+
+    except Exception:
+        return f"Deu um erro aqui: {category}.{key} :c"

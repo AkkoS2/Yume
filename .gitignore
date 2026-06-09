@@ -1,3 +1,6 @@
 .env
 venv/
 yume.db
+cogs/__pycache__/
+utils/__pycache__/
+workers/__pycache__/
