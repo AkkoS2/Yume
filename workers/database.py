@@ -7,8 +7,6 @@ import os
 dreamdb = "yume.db"
 
 
-# Just testing stuff
-
 async def db_init():
 
     async with aiosqlite.connect(dreamdb) as db:

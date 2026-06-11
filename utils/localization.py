@@ -1,4 +1,3 @@
-# Bibliotecas
 import os
 import json
 
@@ -15,7 +14,7 @@ def localizations(dir: str = "locales"):
         print(f"Não achei a pasta {dir} :c")
         return
     
-    for root, dirs, files in os.walk(dir):
+    for root, files in os.walk(dir):
 
         for filename in files:
 
@@ -39,7 +38,7 @@ def localizations(dir: str = "locales"):
                 except Exception as e:
                     print(f"Não consegui carregar {filepath}: {e}. faz alguma coisa!! :c")
 
-    print(f"Idiomas Carregados: {list(locales.keys())}")
+    print(f"Achei alguns idiomas, quer ver? {list(locales.keys())}")
 
 
 def get_language(lang: str, category: str, key: str, personality: str = None) -> str:
