@@ -1,5 +1,5 @@
 from utils.envkeys import yume_key, app_id
-from utils.localization import localizations, get_language
+from utils.localization import localizations
 from discord.ext import commands, tasks
 from workers.database import db_init
 # from utils.logger import YLogger
@@ -21,9 +21,14 @@ class YumeBot(commands.AutoShardedBot):
         super().__init__(command_prefix='y!', case_insensitive=True, intents=intents, application_id=app_id(), shards=3)
 
 
+    async def hook_the_great(self):
+        if not yume_status.is_running():
+            yume_status.start()
+
+
     async def on_command_error(self, ctx, error):
         if isinstance(error, commands.CommandNotFound):
-            await ctx.reply("You can't use this command.", ephemeral=True)
+            await ctx.reply("You can't use this command.", delete_after=5)
 
 
 yume = YumeBot()
@@ -45,7 +50,7 @@ def id_lock(ctx):
 @tasks.loop(seconds=30)
 async def yume_status():
     if status:
-        await yume.change_presence(activity=discord.Activity(type=discord.ActivityType.custom, name=random.choice(status)), status=discord.Status.online)
+        await yume.change_presence(activity=discord.Activity(type=discord.ActivityType.custom, name='status', state=random.choice(status), status=discord.Status.online))
 
 
 @yume.event

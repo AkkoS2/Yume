@@ -12,21 +12,20 @@ def localizations(dir: str = "locales"):
 
     if not os.path.exists(dir):
         print(f"Não achei a pasta {dir} :c")
+
         return
-    
-    for root, files in os.walk(dir):
+
+    for root, dirs, files in os.walk(dir):
 
         for filename in files:
-
             if filename.endswith(".json"):
-                filepath = os.path.join(root, filename)
 
+                filepath = os.path.join(root, filename)
                 otherpath = os.path.relpath(filepath, dir)
                 parts = otherpath.split(os.sep)
 
                 lang = parts[0]
                 category = filename.replace(".json", "")
-
 
                 if lang not in locales:
                     locales[lang] = {}
@@ -57,3 +56,4 @@ def get_language(lang: str, category: str, key: str, personality: str = None) ->
 
     except Exception:
         return f"Deu um erro aqui: {category}.{key} :c"
+    

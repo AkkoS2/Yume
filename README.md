@@ -1,12 +1,14 @@
 <h1 align="center">  Yume </h1>
 
-temp
+<p align="center">
+    <img src="https://cdn.discordapp.com/attachments/1198825335412756612/1515056152705110217/1256254.png?ex=6a2d9d7f&is=6a2c4bff&hm=f559ad584ca73c944621214c18afbc64b47608a48fbb01489c46f9ee9aaf9aff" width="550">
+</p>
 
 ---
 
 ## About Yume
 
-temp²
+Yume is a multi-purpose Discord bot created using discord.py. It features a large array of commands and 5 different personalities for you to choose from. It also features personal and per-server customization. Currently in early development, Yume is expected to have almost all of your needs built into one single bot.
 
 ---
 
@@ -63,4 +65,4 @@ Feel free to suggest any potential ideas or report any issues you encounter on t
 
 ## Special Thanks
 
-- **[Tea Reggi](https://github.com/reggi):** For allowing me to use your fortune cookie list.
+- **[Tea Reggi](https://github.com/reggi):** For allowing the use of your fortune cookie list.
