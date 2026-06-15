@@ -1,7 +1,7 @@
 <h1 align="center">  Yume </h1>
 
 <p align="center">
-    <img src="https://cdn.discordapp.com/attachments/1198825335412756612/1515056152705110217/1256254.png?ex=6a2d9d7f&is=6a2c4bff&hm=f559ad584ca73c944621214c18afbc64b47608a48fbb01489c46f9ee9aaf9aff" width="550">
+    <img src="./readme assets/1256254.png" width="550">
 </p>
 
 ---
