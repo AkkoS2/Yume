@@ -4,3 +4,4 @@ yume.db
 cogs/__pycache__/
 utils/__pycache__/
 workers/__pycache__/
+documentation/

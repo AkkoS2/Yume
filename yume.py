@@ -87,5 +87,4 @@ async def main():
     await yume.start(yume_key())
 
 
-if __name__ == "__main__":
-    asyncio.run(main())
+asyncio.run(main())
