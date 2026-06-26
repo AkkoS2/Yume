@@ -1,8 +1,8 @@
 from utils.envkeys import yume_key, app_id
 from utils.localization import localizations
+from utils.logger import dream_logger
 from discord.ext import commands, tasks
 from workers.database import db_init
-# from utils.logger import YLogger
 from dotenv import load_dotenv
 import discord
 import asyncio
@@ -81,7 +81,7 @@ async def main():
     localizations()
     await db_init()
     await load_cog()
-    # YLogger()
+    dream_logger
     
     print("Yume is Online!!")
     await yume.start(yume_key())
