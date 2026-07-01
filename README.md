@@ -12,19 +12,19 @@ Yume is a multi-purpose Discord bot created using discord.py. It features a larg
 
 ## Features and Commands
 
-|  Categories  | Commands | Different Personalities | Interaction & Customization |
-|--------------|----------|-------------------------|-----------------------------|
-| Dreams       |    20    | Playful & Cheerful      | Multiple Answers            |
-| Economy*     |    00    | Sweet & Energetic       | Supports Per-Guild Language |
-| Images       |    13    | Calm & Cold             | Custom Personal Pronouns    |
-| Interactions |    39    | Chaotic & Cute          | Per-Guild Personality       |
-| Mathematics  |    16    | Yume's Default          | Customizable User Profile   |
-| MiniGames    |    19    |                         | Customizable Guild Profile  |
-| Moderation   |    29    |                         | Welcome/Leave Messages      |
-| Utility      |    25    |                         | Cross-Guild User Progress   |
-| Voice*       |    04    |                         |                             |
-| NSFW*        |    10    |                         |                             |
-| TOTAL        |    175   |                         |                             |
+|  Categories  | Commands |   Different Personalities    | Interaction & Customization |
+|--------------|----------|------------------------------|-----------------------------|
+| Dreams       |    20    | Playful & Cheerful (Planned) | Multiple Answers            |
+| Economy*     |    00    | Sweet & Energetic (Planned)  | Supports Per-Guild Language |
+| Images       |    13    | Calm & Cold (Planned)        | Custom Personal Pronouns    |
+| Interactions |    39    | Chaotic & Cute (Planned)     | Per-Guild Personality       |
+| Mathematics  |    16    | Yume's Default (WIP)         | Customizable User Profile   |
+| MiniGames    |    19    |                              | Customizable Guild Profile  |
+| Moderation   |    29    |                              | Welcome/Leave Messages      |
+| Utility      |    25    |                              | Cross-Guild User Progress   |
+| Voice*       |    04    |                              |                             |
+| NSFW*        |    10    |                              |                             |
+| TOTAL        |    175   |                              |                             |
 
 ---
 
@@ -43,7 +43,7 @@ You are allowed to have a self-hosted version of Yume under the following circum
 - You can check all planned features and development statuses on the **[Project Board](https://github.com/users/AkkoS2/projects/16)**.
 - Check out the latest updates in **[Yume's Changelog](https://github.com/AkkoS2/Yume/wiki/Changelog)**.
 - Read more about how everything works on **[Yume's Wiki](https://github.com/AkkoS2/Yume/wiki)**.
-- Current Development Progress: ![](https://geps.dev/progress/10) :c
+- Current Development Progress: ![](https://geps.dev/progress/10)
 
 ---
 

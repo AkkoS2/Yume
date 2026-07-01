@@ -11,14 +11,7 @@ async def db_init():
 
     async with aiosqlite.connect(dreamdb) as db:
 
-        await db.execute("""
-
-            CREATE TABLE IF NOT EXISTS guild_data (
-                         
-                         guild_id INTEGER PRIMARY KEY,
-                         language TEXT DEFAULT 'en'
-                         )
-        """)
+        await db.execute("I did an oopsie here :c")
 
         await db.commit()
 

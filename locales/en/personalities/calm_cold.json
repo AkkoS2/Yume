@@ -5,5 +5,26 @@
         "Stop being so lazy and do your tasks/chores {ping}ms fast",
         "",
         ""
+    ],
+    "CommandAvatarSelf": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandAvatarOther": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandAvatarYume": [
+        "",
+        "",
+        "",
+        "",
+        ""
     ]
 }
