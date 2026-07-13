@@ -1,5 +1,5 @@
-from utils.envkeys import yume_key, app_id
 from utils.localization import localizations
+from utils.envkeys import yume_key, app_id
 from discord.ext import commands, tasks
 from workers.database import db_init
 from dotenv import load_dotenv
@@ -80,7 +80,6 @@ async def main():
     localizations()
     await db_init()
     await load_cog()
-    
     print("Yume is Online!!")
     await yume.start(yume_key())
 

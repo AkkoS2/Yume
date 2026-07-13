@@ -1,30 +1,30 @@
 {
     "CommandPing": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Currently with {ping}ms",
+        "Something around... I don't know, {ping}ms, maybe?",
+        "Unfortunately for you, my ping will always be around {ping}ms",
+        "Yume's latency right now is at {ping}ms",
+        "Right now, my ping is {ping}ms and before that it was also around that same value"
     ],
     "CommandAvatarSelf": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "You sure do like to see you own pfp huh...",
+        "Here's your sweet pfp!!",
+        "I think I liked it too, looks really nice",
+        "As you asked, here's your current avatar, make sure to save it",
+        "Can I have you avatar too? pretty pleasee~"
     ],
     "CommandAvatarOther": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "{user}'s avatar is ready!",
+        "What are you gonna with {user}'s avatar?",
+        "I might keep {user} pfp to myself...",
+        "{user}'s looking pretty cute, huh?",
+        "Here's {user} avatar, if you need anything more, let me know~"
     ],
     "CommandAvatarYume": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Are you sure you want to see my avatar?",
+        "You know... my avatar is not that special",
+        "Here's my avatar!! you liked it?",
+        "Yume's showing you Yume's avatar",
+        "My avata is pretty cute isn't?"
     ]
 }

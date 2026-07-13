@@ -6,3 +6,4 @@ utils/__pycache__/
 workers/__pycache__/
 utils/draft.py
 terms/
+wiki/

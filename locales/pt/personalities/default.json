@@ -1,30 +1,30 @@
 {
     "CommandPing": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Atualmente com {ping}ms",
+        "Algo em torno de... sei lá, {ping}ms, talvez?",
+        "Infelizmente para você, meu ping sempre estará em torno de {ping}ms",
+        "A latência da Yume agora está em {ping}ms",
+        "Neste momento, meu ping é {ping}ms e antes disso também estava por volta desse mesmo valor"
     ],
     "CommandAvatarSelf": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Você realmente gosta de ver sua própria foto de perfil, hein...",
+        "Aqui está a sua linda foto de perfil!!",
+        "Acho que eu também gostei, ficou muito bonita",
+        "Como pediu, aqui está seu avatar atual, não esqueça de salvar",
+        "Eu posso ficar com o seu avatar também? Por favooor~"
     ],
     "CommandAvatarOther": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "O avatar de {user} está pronto!",
+        "O que você vai fazer com o avatar de {user}?",
+        "Eu acho que vou guardar a foto de perfil de {user} para mim...",
+        "{user} está parecendo bem fofo(a), hein?",
+        "Aqui está o avatar de {user}, se precisar de algo mais, me avise~"
     ],
     "CommandAvatarYume": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Tem certeza de que quer ver meu avatar?",
+        "Sabe... meu avatar não é tão especial assim",
+        "Aqui está o meu avatar!! Você gostou?",
+        "A Yume está te mostrando o avatar da Yume",
+        "Meu avatar é bem fofo, não acha?"
     ]
 }
