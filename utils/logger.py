@@ -5,7 +5,7 @@ import requests
 import logging
 
 
-class DiscordHooker(logging.Handler):
+class DiscordWHook(logging.Handler):
     def __init__(self, hook_url):
         super().__init__()
         self.hook_url = hook_url
@@ -25,7 +25,7 @@ load_dotenv()
 logger = logging.getLogger("discord")
 logger.setLevel(logging.INFO)
 hook_url = f"{str(logger_hook())}"
-discord_handler = DiscordHooker(hook_url)
+discord_handler = DiscordWHook(hook_url)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s : %(message)s')
 discord_handler.setFormatter(formatter)
 

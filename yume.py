@@ -1,4 +1,4 @@
-from utils.logger import hook_url, DiscordHooker
+from utils.logger import hook_url, DiscordWHook
 from utils.localization import localizations
 from utils.envkeys import yume_key, app_id
 from discord.ext import commands, tasks
@@ -81,7 +81,7 @@ async def main():
     localizations()
     await db_init()
     await load_cog()
-    DiscordHooker(hook_url)
+    DiscordWHook(hook_url)
     print("Yume is Online!!")
     await yume.start(yume_key())
 
