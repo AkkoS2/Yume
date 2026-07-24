@@ -1,8 +1,426 @@
 {
-    "Questions": [
-
-    ],
-    "Answers": [
-        
-    ]
+    "Questions": {
+        "Question01": [
+            "Estatisticamente falando, qual destas opções causa mais mortes humanas anualmente? [Fácil]"
+        ],
+        "Question02": [
+            "Qual é o único animal conhecido no mundo que produz fezes em formato de cubo perfeito? [Médio]"
+        ],
+        "Question03": [
+            "Qual é o peso aproximado de uma nuvem cumulus média (aquelas nuvens brancas e fofas)? [Difícil]"
+        ],
+        "Question04": [
+            "Quanto tempo durou a guerra mais curta de toda a história registrada (a Guerra Anglo-Zanzibariana de 1896)? [Médio]"
+        ],
+        "Question05": [
+            "Botanicamente falando, qual destas frutas é classificada como uma baga (berry), enquanto as outras não são? [Difícil]"
+        ],
+        "Question06": [
+            "Muito antes de criar o Mario e consoles de videogame, o que a Nintendo fabricava quando foi fundada em 1889? [Médio]"
+        ],
+        "Question07": [
+            "Qual destes mamíferos é fisicamente incapaz de pular? [Fácil]"
+        ],
+        "Question08": [
+            "Walter Morrison inventou um brinquedo muito famoso e, quando morreu, suas cinzas foram transformadas nesse mesmo brinquedo. Qual é o brinquedo? [Difícil]"
+        ],
+        "Question09": [
+            "Quantos fusos horários diferentes existem na Rússia? [Médio]"
+        ],
+        "Question10": [
+            "Onde fica localizado o menor osso do corpo humano? [Fácil]"
+        ],
+        "Question11": [
+            "Qual é a única letra do alfabeto que não aparece em nenhum dos nomes dos 50 estados dos Estados Unidos? [Difícil]"
+        ],
+        "Question12": [
+            "Qual é o principal ingrediente da famosa \"Sopa de Ninho de Pássaro\", uma iguaria asiática caríssima? [Médio]"
+        ],
+        "Question13": [
+            "Qual destes é, oficialmente, o animal nacional da Escócia? [Fácil]"
+        ],
+        "Question14": [
+            "Em quais destes planetas os cientistas acreditam que literalmente \"chove diamantes\"? [Médio]"
+        ],
+        "Question15": [
+            "Qual foi o primeiro produto na história a ter o seu código de barras escaneado em um caixa de supermercado, em 1974? [Difícil]"
+        ],
+        "Question16": [
+            "Quantos corações tem um polvo? [Fácil]"
+        ],
+        "Question17": [
+            "Os amendoins na verdade não são nozes (nuts). A qual família botânica eles pertencem? [Médio]"
+        ],
+        "Question18": [
+            "Qual destes materiais naturais é comprovadamente mais forte que o aço, se compararmos a mesma proporção de peso? [Médio]"
+        ],
+        "Question19": [
+            "Os quebra-cabeças modernos (jigsaw puzzles) foram inventados originalmente no século XVIII com qual propósito? [Difícil]"
+        ],
+        "Question20": [
+            "O famoso mascote da Michelin (conhecido como Bibendum) é feito de pneus. Por que ele é branco e não preto? [Médio]"
+        ],
+        "Question21": [
+            "Aproximadamente qual porcentagem do cérebro humano é composta por água? [Médio]"
+        ],
+        "Question22": [
+            "Qual é a única ave no mundo que possui a capacidade de voar para trás? [Fácil]"
+        ],
+        "Question23": [
+            "Qual é o único país do mundo cuja bandeira não tem um formato retangular ou quadrado? [Médio]"
+        ],
+        "Question24": [
+            "Em qual país foi inventada a polêmica \"Pizza Havaiana\" (aquela que leva abacaxi e presunto)? [Médio]"
+        ],
+        "Question25": [
+            "Na língua inglesa, como se chama um grupo de corvos (crows)? [Difícil]"
+        ],
+        "Question26": [
+            "Qual foi o primeiríssimo nome de domínio terminado em \".com\" a ser registrado na história da internet, em 1985? [Difícil]"
+        ],
+        "Question27": [
+            "De acordo com astronautas que retornaram de caminhadas espaciais, qual é o cheiro do espaço sideral? [Médio]"
+        ],
+        "Question28": [
+            "Qual é o músculo mais forte do corpo humano em relação ao seu próprio tamanho? [Fácil]"
+        ],
+        "Question29": [
+            "De onde vem a maior parte do oxigênio respirável da Terra? [Médio]"
+        ],
+        "Question30": [
+            "O plástico bolha é famoso por proteger encomendas (e por ser divertido de estourar), mas ele foi originalmente inventado em 1957 para ser usado como o quê? [Difícil]"
+        ]
+    },
+    "Answers": {
+        "Question01": {
+            "Correct": [
+                "Máquinas de venda automática"
+            ],
+            "Wrong": [
+                "Ataques de tubarões",
+                "Raios",
+                "Ursos pardos",
+                "Quedas de meteoritos"
+            ]
+        },
+        "Question02": {
+            "Correct": [
+                "Vombate"
+            ],
+            "Wrong": [
+                "Ornitorrinco",
+                "Capivara",
+                "Diabo-da-tasmânia",
+                "Bicho-preguiça"
+            ]
+        },
+        "Question03": {
+            "Correct": [
+                "500.000 kg"
+            ],
+            "Wrong": [
+                "50 kg",
+                "500 kg",
+                "5.000 kg",
+                "50.000 kg"
+            ]
+        },
+        "Question04": {
+            "Correct": [
+                "Cerca de 38 minutos"
+            ],
+            "Wrong": [
+                "Exatamente 24 horas",
+                "3 dias",
+                "1 semana e meia",
+                "5 horas"
+            ]
+        },
+        "Question05": {
+            "Correct": [
+                "Banana"
+            ],
+            "Wrong": [
+                "Morango",
+                "Framboesa",
+                "Amora",
+                "Cereja"
+            ]
+        },
+        "Question06": {
+            "Correct": [
+                "Cartões de baralho"
+            ],
+            "Wrong": [
+                "Relógios de bolso",
+                "Brinquedos de madeira",
+                "Sapatos tradicionais japoneses",
+                "Máquinas de escrever"
+            ]
+        },
+        "Question07": {
+            "Correct": [
+                "Elefante"
+            ],
+            "Wrong": [
+                "Hipopótamo",
+                "Rinoceronte",
+                "Girafa",
+                "Bicho-preguiça"
+            ]
+        },
+        "Question08": {
+            "Correct": [
+                "O Frisbee"
+            ],
+            "Wrong": [
+                "O Ioiô",
+                "O Cubo Mágico",
+                "O Pião",
+                "O Bumerangue"
+            ]
+        },
+        "Question09": {
+            "Correct": [
+                "11"
+            ],
+            "Wrong": [
+                "5",
+                "7",
+                "9",
+                "14"
+            ]
+        },
+        "Question10": {
+            "Correct": [
+                "No ouvido"
+            ],
+            "Wrong": [
+                "No nariz",
+                "No dedo mindinho",
+                "No olho",
+                "No pé"
+            ]
+        },
+        "Question11": {
+            "Correct": [
+                "Q"
+            ],
+            "Wrong": [
+                "J",
+                "X",
+                "Z",
+                "V"
+            ]
+        },
+        "Question12": {
+            "Correct": [
+                "Saliva de pássaro"
+            ],
+            "Wrong": [
+                "Galhos finos e folhas",
+                "Penas e barro",
+                "Ovos não chocados",
+                "Folhas de chá verde"
+            ]
+        },
+        "Question13": {
+            "Correct": [
+                "O Unicórnio"
+            ],
+            "Wrong": [
+                "O Monstro do Lago Ness",
+                "A Ovelha",
+                "A Águia",
+                "O Cervo"
+            ]
+        },
+        "Question14": {
+            "Correct": [
+                "Urano e Netuno"
+            ],
+            "Wrong": [
+                "Marte e Vênus",
+                "Júpiter e Saturno",
+                "Mercúrio e Marte",
+                "Terra e Vênus"
+            ]
+        },
+        "Question15": {
+            "Correct": [
+                "Um pacote de chicletes Wrigley's"
+            ],
+            "Wrong": [
+                "Uma garrafa de Coca-Cola",
+                "Uma caixa de leite",
+                "Uma lata de sopa Campbell's",
+                "Um pão de forma"
+            ]
+        },
+        "Question16": {
+            "Correct": [
+                "3"
+            ],
+            "Wrong": [
+                "1",
+                "2",
+                "4",
+                "5"
+            ]
+        },
+        "Question17": {
+            "Correct": [
+                "Leguminosas"
+            ],
+            "Wrong": [
+                "Frutas",
+                "Tubérculos",
+                "Raízes",
+                "Fungos"
+            ]
+        },
+        "Question18": {
+            "Correct": [
+                "Teia de aranha"
+            ],
+            "Wrong": [
+                "Osso humano",
+                "Casco de tartaruga",
+                "Marfim de elefante",
+                "Bambu"
+            ]
+        },
+        "Question19": {
+            "Correct": [
+                "Ensinar geografia para crianças"
+            ],
+            "Wrong": [
+                "Treinamento tático militar",
+                "Testes de inteligência em asilos",
+                "Decifrar códigos secretos",
+                "Entretenimento exclusivo da realeza"
+            ]
+        },
+        "Question20": {
+            "Correct": [
+                "Porque os primeiros pneus de borracha natural eram brancos"
+            ],
+            "Wrong": [
+                "Para representar a segurança na neve",
+                "Foi um erro de impressão na primeira revista",
+                "Para parecer um fantasma",
+                "Para economizar tinta preta nas gráficas"
+            ]
+        },
+        "Question21": {
+            "Correct": [
+                "73%"
+            ],
+            "Wrong": [
+                "25%",
+                "40%",
+                "60%",
+                "90%"
+            ]
+        },
+        "Question22": {
+            "Correct": [
+                "O Beija-flor"
+            ],
+            "Wrong": [
+                "O Corvo",
+                "O Pica-pau",
+                "A Andorinha",
+                "A Coruja"
+            ]
+        },
+        "Question23": {
+            "Correct": [
+                "Nepal"
+            ],
+            "Wrong": [
+                "Suíça",
+                "Vaticano",
+                "Butão",
+                "Mônaco"
+            ]
+        },
+        "Question24": {
+            "Correct": [
+                "Canadá"
+            ],
+            "Wrong": [
+                "Havaí (Estados Unidos)",
+                "Itália",
+                "Nova Zelândia",
+                "Austrália"
+            ]
+        },
+        "Question25": {
+            "Correct": [
+                "Um assassinato"
+            ],
+            "Wrong": [
+                "Um bando",
+                "Uma tropa",
+                "Uma corte",
+                "Uma sombra"
+            ]
+        },
+        "Question26": {
+            "Correct": [
+                "symbolics.com"
+            ],
+            "Wrong": [
+                "google.com",
+                "apple.com",
+                "ibm.com",
+                "xerox.com"
+            ]
+        },
+        "Question27": {
+            "Correct": [
+                "Cheiro de bife grelhado e metal quente"
+            ],
+            "Wrong": [
+                "Cheiro de lixo orgânico",
+                "Cheiro de menta e gelo",
+                "Não tem cheiro absolutamente nenhum",
+                "Cheiro de ovos podres"
+            ]
+        },
+        "Question28": {
+            "Correct": [
+                "O masseter (músculo da mandíbula)"
+            ],
+            "Wrong": [
+                "O coração",
+                "A língua",
+                "O glúteo máximo",
+                "O bíceps"
+            ]
+        },
+        "Question29": {
+            "Correct": [
+                "Dos oceanos (produzido por fitoplânctons)"
+            ],
+            "Wrong": [
+                "Da Floresta Amazônica",
+                "Das florestas de pinheiros do norte",
+                "Da tundra siberiana",
+                "Dos pântanos e manguezais"
+            ]
+        },
+        "Question30": {
+            "Correct": [
+                "Papel de parede texturizado"
+            ],
+            "Wrong": [
+                "Embalagem para remédios de vidro",
+                "Isolamento térmico para estufas",
+                "Tapete antiderrapante para banheiros",
+                "Proteção para sapatos em dias de chuva"
+            ]
+        }
+    }
 }

@@ -26,5 +26,54 @@
         "Aqui está o meu avatar!! Você gostou?",
         "A Yume está te mostrando o avatar da Yume",
         "Meu avatar é bem fofo, não acha?"
+    ],
+    "CommandBannerSelf": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandBannerOther": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandBannerYume": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandVerifyStatus": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandGitHubRepo": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandReportProblems": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandOpenIssue": [
+        "",
+        "",
+        "",
+        "",
+        ""
     ]
 }

@@ -1,8 +1,426 @@
 {
-    "Questions": [
-
-    ],
-    "Answers": [
-        
-    ]
+    "Questions": {
+        "Question01": [
+            "Statistically speaking, which of these options causes more human deaths annually? [Easy]"
+        ],
+        "Question02": [
+            "What is the only known animal in the world that produces perfectly cube-shaped poop? [Medium]"
+        ],
+        "Question03": [
+            "What is the approximate weight of an average cumulus cloud (those fluffy white ones)? [Hard]"
+        ],
+        "Question04": [
+            "How long did the shortest recorded war in history (the Anglo-Zanzibar War of 1896) last? [Medium]"
+        ],
+        "Question05": [
+            "Botanically speaking, which of these fruits is actually classified as a berry, while the others are not? [Hard]"
+        ],
+        "Question06": [
+            "Long before creating Mario and video game consoles, what did Nintendo manufacture when it was founded in 1889? [Medium]"
+        ],
+        "Question07": [
+            "Which of these mammals is physically incapable of jumping? [Easy]"
+        ],
+        "Question08": [
+            "Walter Morrison invented a very famous toy, and when he died, his ashes were turned into that very toy. What is the toy? [Hard]"
+        ],
+        "Question09": [
+            "How many different time zones are there in Russia? [Medium]"
+        ],
+        "Question10": [
+            "Where is the smallest bone in the human body located? [Easy]"
+        ],
+        "Question11": [
+            "What is the only letter of the alphabet that does not appear in any of the names of the 50 US states? [Hard]"
+        ],
+        "Question12": [
+            "What is the main ingredient in the famous \"Bird's Nest Soup\", a very expensive Asian delicacy? [Medium]"
+        ],
+        "Question13": [
+            "Which of these is, officially, the national animal of Scotland? [Easy]"
+        ],
+        "Question14": [
+            "On which of these planets do scientists believe it literally \"rains diamonds\"? [Medium]"
+        ],
+        "Question15": [
+            "What was the first product in history to have its barcode scanned at a supermarket checkout, in 1974? [Hard]"
+        ],
+        "Question16": [
+            "How many hearts does an octopus have? [Easy]"
+        ],
+        "Question17": [
+            "Peanuts are actually not nuts. To which botanical family do they belong? [Medium]"
+        ],
+        "Question18": [
+            "Which of these natural materials is proven to be stronger than steel, if comparing the same ratio of weight? [Medium]"
+        ],
+        "Question19": [
+            "Modern jigsaw puzzles were originally invented in the 18th century for what purpose? [Hard]"
+        ],
+        "Question20": [
+            "The famous Michelin mascot (known as Bibendum) is made of tires. Why is he white and not black? [Medium]"
+        ],
+        "Question21": [
+            "Approximately what percentage of the human brain is composed of water? [Medium]"
+        ],
+        "Question22": [
+            "What is the only bird in the world that has the ability to fly backwards? [Easy]"
+        ],
+        "Question23": [
+            "Which is the only country in the world whose flag does not have a rectangular or square shape? [Medium]"
+        ],
+        "Question24": [
+            "In which country was the controversial \"Hawaiian Pizza\" (the one with pineapple and ham) invented? [Medium]"
+        ],
+        "Question25": [
+            "In the English language, what is a group of crows called? [Hard]"
+        ],
+        "Question26": [
+            "What was the very first domain name ending in \".com\" to be registered in the history of the internet, in 1985? [Hard]"
+        ],
+        "Question27": [
+            "According to astronauts returning from spacewalks, what does outer space smell like? [Medium]"
+        ],
+        "Question28": [
+            "What is the strongest muscle in the human body relative to its own size? [Easy]"
+        ],
+        "Question29": [
+            "Where does most of Earth's breathable oxygen come from? [Medium]"
+        ],
+        "Question30": [
+            "Bubble wrap is famous for protecting packages (and being fun to pop), but it was originally invented in 1957 to be used as what? [Hard]"
+        ]
+    },
+    "Answers": {
+        "Question01": {
+            "Correct": [
+                "Vending machines"
+            ],
+            "Wrong": [
+                "Shark attacks",
+                "Lightning strikes",
+                "Grizzly bears",
+                "Meteorite falls"
+            ]
+        },
+        "Question02": {
+            "Correct": [
+                "Wombat"
+            ],
+            "Wrong": [
+                "Platypus",
+                "Capybara",
+                "Tasmanian devil",
+                "Sloth"
+            ]
+        },
+        "Question03": {
+            "Correct": [
+                "500,000 kg (1.1 million lbs)"
+            ],
+            "Wrong": [
+                "50 kg (110 lbs)",
+                "500 kg (1,100 lbs)",
+                "5,000 kg (11,000 lbs)",
+                "50,000 kg (110,000 lbs)"
+            ]
+        },
+        "Question04": {
+            "Correct": [
+                "About 38 minutes"
+            ],
+            "Wrong": [
+                "Exactly 24 hours",
+                "3 days",
+                "1 and a half weeks",
+                "5 hours"
+            ]
+        },
+        "Question05": {
+            "Correct": [
+                "Banana"
+            ],
+            "Wrong": [
+                "Strawberry",
+                "Raspberry",
+                "Blackberry",
+                "Cherry"
+            ]
+        },
+        "Question06": {
+            "Correct": [
+                "Playing cards"
+            ],
+            "Wrong": [
+                "Pocket watches",
+                "Wooden toys",
+                "Traditional Japanese shoes",
+                "Typewriters"
+            ]
+        },
+        "Question07": {
+            "Correct": [
+                "Elephant"
+            ],
+            "Wrong": [
+                "Hippopotamus",
+                "Rhinoceros",
+                "Giraffe",
+                "Sloth"
+            ]
+        },
+        "Question08": {
+            "Correct": [
+                "The Frisbee"
+            ],
+            "Wrong": [
+                "The Yo-yo",
+                "The Rubik's Cube",
+                "The Spinning Top",
+                "The Boomerang"
+            ]
+        },
+        "Question09": {
+            "Correct": [
+                "11"
+            ],
+            "Wrong": [
+                "5",
+                "7",
+                "9",
+                "14"
+            ]
+        },
+        "Question10": {
+            "Correct": [
+                "In the ear"
+            ],
+            "Wrong": [
+                "In the nose",
+                "In the pinky finger",
+                "In the eye",
+                "In the foot"
+            ]
+        },
+        "Question11": {
+            "Correct": [
+                "Q"
+            ],
+            "Wrong": [
+                "J",
+                "X",
+                "Z",
+                "V"
+            ]
+        },
+        "Question12": {
+            "Correct": [
+                "Bird saliva"
+            ],
+            "Wrong": [
+                "Thin twigs and leaves",
+                "Feathers and mud",
+                "Unhatched eggs",
+                "Green tea leaves"
+            ]
+        },
+        "Question13": {
+            "Correct": [
+                "The Unicorn"
+            ],
+            "Wrong": [
+                "The Loch Ness Monster",
+                "The Sheep",
+                "The Eagle",
+                "The Deer"
+            ]
+        },
+        "Question14": {
+            "Correct": [
+                "Uranus and Neptune"
+            ],
+            "Wrong": [
+                "Mars and Venus",
+                "Jupiter and Saturn",
+                "Mercury and Mars",
+                "Earth and Venus"
+            ]
+        },
+        "Question15": {
+            "Correct": [
+                "A pack of Wrigley's chewing gum"
+            ],
+            "Wrong": [
+                "A bottle of Coca-Cola",
+                "A carton of milk",
+                "A can of Campbell's soup",
+                "A loaf of bread"
+            ]
+        },
+        "Question16": {
+            "Correct": [
+                "3"
+            ],
+            "Wrong": [
+                "1",
+                "2",
+                "4",
+                "5"
+            ]
+        },
+        "Question17": {
+            "Correct": [
+                "Legumes"
+            ],
+            "Wrong": [
+                "Fruits",
+                "Tubers",
+                "Roots",
+                "Fungi"
+            ]
+        },
+        "Question18": {
+            "Correct": [
+                "Spider silk"
+            ],
+            "Wrong": [
+                "Human bone",
+                "Turtle shell",
+                "Elephant ivory",
+                "Bamboo"
+            ]
+        },
+        "Question19": {
+            "Correct": [
+                "Teaching geography to children"
+            ],
+            "Wrong": [
+                "Military tactical training",
+                "Intelligence tests in asylums",
+                "Deciphering secret codes",
+                "Exclusive entertainment for royalty"
+            ]
+        },
+        "Question20": {
+            "Correct": [
+                "Because the first natural rubber tires were white"
+            ],
+            "Wrong": [
+                "To represent safety in the snow",
+                "It was a printing error in the first magazine",
+                "To look like a ghost",
+                "To save black ink at the printing press"
+            ]
+        },
+        "Question21": {
+            "Correct": [
+                "73%"
+            ],
+            "Wrong": [
+                "25%",
+                "40%",
+                "60%",
+                "90%"
+            ]
+        },
+        "Question22": {
+            "Correct": [
+                "The Hummingbird"
+            ],
+            "Wrong": [
+                "The Crow",
+                "The Woodpecker",
+                "The Swallow",
+                "The Owl"
+            ]
+        },
+        "Question23": {
+            "Correct": [
+                "Nepal"
+            ],
+            "Wrong": [
+                "Switzerland",
+                "Vatican City",
+                "Bhutan",
+                "Monaco"
+            ]
+        },
+        "Question24": {
+            "Correct": [
+                "Canada"
+            ],
+            "Wrong": [
+                "Hawaii (United States)",
+                "Italy",
+                "New Zealand",
+                "Australia"
+            ]
+        },
+        "Question25": {
+            "Correct": [
+                "A murder"
+            ],
+            "Wrong": [
+                "A flock",
+                "A troop",
+                "A court",
+                "A shadow"
+            ]
+        },
+        "Question26": {
+            "Correct": [
+                "symbolics.com"
+            ],
+            "Wrong": [
+                "google.com",
+                "apple.com",
+                "ibm.com",
+                "xerox.com"
+            ]
+        },
+        "Question27": {
+            "Correct": [
+                "Smell of seared steak and hot metal"
+            ],
+            "Wrong": [
+                "Smell of organic garbage",
+                "Smell of mint and ice",
+                "It has absolutely no smell at all",
+                "Smell of rotten eggs"
+            ]
+        },
+        "Question28": {
+            "Correct": [
+                "The masseter (jaw muscle)"
+            ],
+            "Wrong": [
+                "The heart",
+                "The tongue",
+                "The gluteus maximus",
+                "The bicep"
+            ]
+        },
+        "Question29": {
+            "Correct": [
+                "From the oceans (produced by phytoplankton)"
+            ],
+            "Wrong": [
+                "From the Amazon Rainforest",
+                "From the northern pine forests",
+                "From the Siberian tundra",
+                "From swamps and mangroves"
+            ]
+        },
+        "Question30": {
+            "Correct": [
+                "Textured wallpaper"
+            ],
+            "Wrong": [
+                "Packaging for glass medicines",
+                "Thermal insulation for greenhouses",
+                "Non-slip bath mat",
+                "Rain shoe protection"
+            ]
+        }
+    }
 }

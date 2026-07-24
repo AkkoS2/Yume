@@ -26,5 +26,54 @@
         "",
         "",
         ""
+    ],
+    "CommandBannerSelf": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandBannerOther": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandBannerYume": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandVerifyStatus": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandGitHubRepo": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandReportProblems": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandOpenIssue": [
+        "",
+        "",
+        "",
+        "",
+        ""
     ]
 }

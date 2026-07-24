@@ -1,8 +1,8 @@
 {
     "CommandPing": [
-        "That wasn't that impressive you know {ping}ms fast",
-        "I don't hate you. I just don't care at all {ping}ms fast",
-        "Stop being so lazy and do your tasks/chores {ping}ms fast",
+        "",
+        "",
+        "",
         "",
         ""
     ],
@@ -21,6 +21,55 @@
         ""
     ],
     "CommandAvatarYume": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandBannerSelf": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandBannerOther": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandBannerYume": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandVerifyStatus": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandGitHubRepo": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandReportProblems": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandOpenIssue": [
         "",
         "",
         "",
