@@ -1,10 +1,10 @@
 {
     "CommandPing": [
-        "Atualmente com {ping}ms",
+        "Atualmente com {ping}ms~",
         "Algo em torno de... sei lá, {ping}ms, talvez?",
         "Infelizmente para você, meu ping sempre estará em torno de {ping}ms",
         "A latência da Yume agora está em {ping}ms",
-        "Neste momento, meu ping é {ping}ms e antes disso também estava por volta desse mesmo valor"
+        "Neste exato momento é {ping}ms. E se você usar o comando de novo daqui 2 segundos... adivinha? Vai continuar quase a mesma coisa~"
     ],
     "CommandAvatarSelf": [
         "Você realmente gosta de ver sua própria foto de perfil, hein...",
@@ -49,11 +49,11 @@
         ""
     ],
     "CommandVerifyStatus": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Chegueeii!! Precisa de algo?",
+        "O que houve? Está tudo bem?",
+        "A Yume tá funcionando perfeitamente~",
+        "Tudo funcionando, nenhum probleminha até agora~",
+        "hmm?"
     ],
     "CommandGitHubRepo": [
         "",

@@ -4,7 +4,7 @@
         "Something around... I don't know, {ping}ms, maybe?",
         "Unfortunately for you, my ping will always be around {ping}ms",
         "Yume's latency right now is at {ping}ms",
-        "Right now, my ping is {ping}ms and before that it was also around that same value"
+        "Right now it's {ping}ms. And if you use this command again in 2 seconds... guess what? It's still gonna be pretty much the same~"
     ],
     "CommandAvatarSelf": [
         "You sure do like to see you own pfp huh...",
@@ -49,11 +49,11 @@
         ""
     ],
     "CommandVerifyStatus": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "I'm heree!! Need something?",
+        "What Happened? is everything okay?",
+        "Yume's working perfectly~",
+        "Everything's working, not a single problem so far~",
+        "hmm?"
     ],
     "CommandGitHubRepo": [
         "",
