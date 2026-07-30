@@ -1,7 +1,6 @@
 # Bibliotecas
 import aiosqlite
 import asyncio
-import os
 
 
 dreamdb = "yume.db"
@@ -16,11 +15,11 @@ async def db_init():
 
                 guild_id INTEGER PRIMARY KEY,
                 language TEXT DEFAULT 'en'
-
             )
         """)
 
         await db.commit()
+
 
 async def guild_language_get(guild_id: int) -> str:
     async with aiosqlite.connect(dreamdb) as db:

@@ -1,8 +1,8 @@
+from workers.database import db_init, guild_language_set
 from utils.logger import hook_url, DiscordWHook
 from utils.localization import localizations
 from utils.envkeys import yume_key, app_id
 from discord.ext import commands, tasks
-from workers.database import db_init
 from dotenv import load_dotenv
 import discord
 import asyncio
@@ -57,6 +57,9 @@ async def yume_status():
 async def on_ready():
     if not yume_status.is_running():
         yume_status.start()
+
+    for guild in yume.guilds:
+        await guild_language_set(guild.id, 'en')
 
 
 async def load_cog():
