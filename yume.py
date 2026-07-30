@@ -47,7 +47,7 @@ def id_lock(ctx):
     return ctx.author.id == 337765056970358784
 
 
-@tasks.loop(seconds=30)
+@tasks.loop(seconds=10)
 async def yume_status():
     if status:
         await yume.change_presence(activity=discord.Activity(type=discord.ActivityType.custom, name='status', state=random.choice(status), status=discord.Status.online))
