@@ -28,25 +28,25 @@
         "Meu avatar é bem fofo, não acha?"
     ],
     "CommandBannerSelf": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Seu banner? Achei que você já o tivesse... mas claro~",
+        "Como quiser~ Aqui está~",
+        "Não é mais o seu banner, agora é meu!",
+        "Até que é bem fofo, né? EU AMEI!!~",
+        "Aqui está o seu banner, não esquece de salvar, tá boom?"
     ],
     "CommandBannerOther": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Hmm? Ah, claro, aqui está o banner de {user}.",
+        "Por que você quer o banner de {user} e não o meu? :c",
+        "O banner de {user} agora é nosso!",
+        "Uau~ como o banner de {user} pode ser tão lindo??",
+        "Vou guardar pra mim também e adicionar à minha coleção de banners~"
     ],
     "CommandBannerYume": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Ei!!! Isso é meeeu... mas você pode ficar também~",
+        "Já que você pediu, aqui está... bem fofo, não acha?!",
+        "Não é nada demais... tem certeza?",
+        "A Yume está te mostrando o banner especial da Yume!",
+        "Aqui está o meu banner! E nem pense em perder."
     ],
     "CommandVerifyStatus": [
         "Chegueeii!! Precisa de algo?",

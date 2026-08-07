@@ -28,25 +28,25 @@
         "My avata is pretty cute isn't?"
     ],
     "CommandBannerSelf": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Your banner? I thought you'd have that already... but sure~",
+        "As you wish~ Here it is~",
+        "It's not your banner anymore, it's mine now!",
+        "Looking pretty cute, huh? I LOVED IT!!~",
+        "Here's your banner, don't forget to save it, okaay?"
     ],
     "CommandBannerOther": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Hmm? Ah sure, here's {user}'s banner.",
+        "Why do you want {user}'s banner and not mine? :c",
+        "{user}'s banner is now ours!",
+        "Woah~ how can {user}'s banner be this pretty??",
+        "I'll keep it to myself as well and add it to my banner collection~"
     ],
     "CommandBannerYume": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Hey!!! That's mineee... but you can have it as well~",
+        "Since you asked, here it is... pretty cute isn't it?!",
+        "It's nothing special... are you sure?",
+        "Yume's showing you Yume's special banner!",
+        "Here's my banner! And don't even think about losing it."
     ],
     "CommandVerifyStatus": [
         "I'm heree!! Need something?",
