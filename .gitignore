@@ -4,6 +4,6 @@ yume.db
 cogs/__pycache__/
 utils/__pycache__/
 workers/__pycache__/
-utils/draft.py
+utils/drafts.py
 terms/
 wiki/

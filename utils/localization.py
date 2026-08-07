@@ -1,71 +1,77 @@
-from collections import defaultdict
 import os
 import json
+import random
 
 
-locales = defaultdict(dict)
+locales = {}
 
-
-def localizations(dir: str = "locales"):
-
+def localizations(dir_path: str = "locales"):
     global locales
     locales.clear()
 
-    if not os.path.exists(dir):
-        print(f"Não achei a pasta {dir} :c")
-
+    if not os.path.exists(dir_path):
+        print(f"Não achei a pasta {dir_path} :c")
         return
 
-    for root, dirs, files in os.walk(dir):
-
+    for root, dirs, files in os.walk(dir_path):
         for filename in files:
-
             if not filename.endswith(".json"):
                 continue
 
             filepath = os.path.join(root, filename)
-            otherpath = os.path.relpath(filepath, dir)
+            
+            otherpath = os.path.relpath(filepath, dir_path)
             parts = otherpath.split(os.sep)
 
-            lang = parts[0]
-            category = filename.replace(".json", "")
-            langs = how_to_load_a_json_101(filepath)
+            if len(parts) >= 3:
+                lang = parts[0]
+                folder = parts[1]
+                category = filename.replace(".json", "")
+                
+                data = how_to_load_a_json_101(filepath)
 
-            if langs:
-                locales[lang][category] = langs
+                if data:
+                    if lang not in locales:
+                        locales[lang] = {}
+                    if folder not in locales[lang]:
+                        locales[lang][folder] = {}
                     
+                    locales[lang][folder][category] = data
+                    
+    print(f"Achei algumas coisinhas: {list(locales.keys())}")
 
-    print(f"Achei alguns idiomas, quer ver? {list(locales.keys())}")
 
-
-# Deixar menos aninhado isso aqui depois, ficou feinho :c
-# Talvez tem que dividir essa coisinha aqui, ou deixae tudo em uma def grandona
 def get_language(lang: str, category: str, key: str, personality: str = None) -> str:
+    if lang not in locales:
+        lang = "en"
 
     try:
+        if personality:
+            data = locales[lang].get("personalities", {}).get(personality, {})
+        else:
+            data = locales[lang].get("commands", {}).get(category, {})
 
-        if lang not in locales:
-            lang = "en"
 
-        data = locales[lang].get(category, {})
+        resultado = data.get(key)
 
-        if personality and key in data and personality in data[key]:
-            return data[key][personality]
+        if resultado:
+            if isinstance(resultado, list):
 
-        return data.get(key, f"Cadê meus textos? :c \n {category}.{key}")
+                opcoes_validas = [frase for frase in resultado if frase.strip()]
+                return random.choice(opcoes_validas) if opcoes_validas else "Faltou texto aqui! :c"
+            
+            return resultado
 
-    except Exception:
-        return f"Deu um erro aqui: {category}.{key} :c"
+        return f"Cadê meus textos? :c \n {key}"
+
+    except Exception as e:
+        return f"Deu um erro aqui: {key} :c ({e})"
     
 
 def how_to_load_a_json_101(filepath):
-
     try:
         with open(filepath, "r", encoding="utf-8") as f:
             return json.load(f)
-    
     except Exception as e:
-
         print(f"Não consegui carregar {filepath}: {e}. faz alguma coisa!! :c")
         return None
-    
