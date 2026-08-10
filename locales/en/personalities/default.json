@@ -1,10 +1,10 @@
 {
     "CommandPing": [
-        "Currently with {ping}ms",
-        "Something around... I don't know, {ping}ms, maybe?",
-        "Unfortunately for you, my ping will always be around {ping}ms",
-        "Yume's latency right now is at {ping}ms",
-        "Right now it's {ping}ms. And if you use this command again in 2 seconds... guess what? It's still gonna be pretty much the same~"
+        "Currently with `{ping}ms~`",
+        "Something around... I don't know, `{ping}ms`, maybe?",
+        "Unfortunately for you, my ping will always be around `{ping}ms`",
+        "Yume's latency right now is at `{ping}ms`",
+        "Right now it's `{ping}ms`. And if you use this command again in 2 seconds... guess what? It's still gonna be pretty much the same~"
     ],
     "CommandAvatarSelf": [
         "You sure do like to see you own pfp huh...",

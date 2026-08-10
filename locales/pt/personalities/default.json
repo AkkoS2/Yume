@@ -1,10 +1,10 @@
 {
     "CommandPing": [
-        "Atualmente com {ping}ms~",
-        "Algo em torno de... sei lá, {ping}ms, talvez?",
-        "Infelizmente para você, meu ping sempre estará em torno de {ping}ms",
-        "A latência da Yume agora está em {ping}ms",
-        "Neste exato momento é {ping}ms. E se você usar o comando de novo daqui 2 segundos... adivinha? Vai continuar quase a mesma coisa~"
+        "Atualmente com `{ping}ms~`",
+        "Algo em torno de... sei lá, `{ping}ms`, talvez?",
+        "Infelizmente para você, meu ping sempre estará em torno de `{ping}ms`",
+        "A latência da Yume agora está em `{ping}ms`",
+        "Neste exato momento é `{ping}ms`. E se você usar o comando de novo daqui 2 segundos... adivinha? Vai continuar quase a mesma coisa~"
     ],
     "CommandAvatarSelf": [
         "Você realmente gosta de ver sua própria foto de perfil, hein...",
