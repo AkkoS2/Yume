@@ -45,7 +45,6 @@ class Utility(commands.Cog):
         await interaction.response.send_message(phrase)
 
 
-
 # Registra a classe nos Cogs
 async def setup(yume: commands.AutoShardedBot) -> None:
     await yume.add_cog(Utility(yume))

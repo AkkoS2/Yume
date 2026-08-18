@@ -28,10 +28,8 @@ class Images(commands.Cog):
         guild_id = interaction.guild_id if interaction.guild_id else 0
         lang, persona = await guild_settings_get(guild_id)
 
-
         if user is None:
             user = interaction.user
-
 
         if user.id == interaction.user.id:
             json_key = "CommandAvatarSelf"
@@ -51,11 +49,8 @@ class Images(commands.Cog):
             url_avatar_global = user.avatar.url
             url_avatar_server = user.display_avatar.url
 
-
         get_phrase = get_language(lang, "", json_key, persona)
         phrase = get_phrase.format(user = user.display_name)
-
-
 
         embed = AvatarEmbed.embed
         embed.set_author(name=f"{phrase}")
