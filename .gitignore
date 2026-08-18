@@ -3,6 +3,7 @@ venv/
 yume.db
 cogs/__pycache__/
 utils/__pycache__/
+assets/__pycache__/
 workers/__pycache__/
 utils/drafts.py
 terms/

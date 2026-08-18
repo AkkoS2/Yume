@@ -16,9 +16,9 @@
     "CommandAvatarOther": [
         "{user}'s avatar is ready!",
         "What are you gonna with {user}'s avatar?",
-        "I might keep {user} pfp to myself...",
+        "I might keep {user}'s pfp to myself...",
         "{user}'s looking pretty cute, huh?",
-        "Here's {user} avatar, if you need anything more, let me know~"
+        "Here's {user}'s avatar, if you need anything more, let me know~"
     ],
     "CommandAvatarYume": [
         "Are you sure you want to see my avatar?",

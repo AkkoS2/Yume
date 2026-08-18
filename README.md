@@ -43,7 +43,7 @@ You are allowed to have a self-hosted version of Yume under the following circum
 - You can check all planned features and development statuses on the **[Project Board](https://github.com/users/AkkoS2/projects/16)**.
 - Check out the latest updates in **[Yume's Changelog](https://github.com/AkkoS2/Yume/wiki/Changelog)**.
 - Read more about how everything works on **[Yume's Wiki](https://github.com/AkkoS2/Yume/wiki)**.
-- Current Development Progress: ![](https://geps.dev/progress/17)
+- Current Development Progress: ![](https://geps.dev/progress/20)
 
 ---
 

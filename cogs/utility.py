@@ -3,10 +3,14 @@ from workers.database import guild_settings_get
 from utils.localization import get_language
 from discord.ext import commands
 from discord import app_commands
+import logging
 import discord
 
 
-# Definição classe Cog
+logger = logging.getLogger(__name__)
+
+
+# Definição da classe Cog
 class Utility(commands.Cog):
     def __init__(self, yume: commands.AutoShardedBot):
         self.yume = yume
@@ -28,6 +32,16 @@ class Utility(commands.Cog):
         get_phrase = get_language(lang, "", "CommandPing", persona)
         phrase = get_phrase.format(ping = latency)
 
+        await interaction.response.send_message(phrase)
+
+    # Check Yume
+    @app_commands.command(name='verify', description="You can use this to see if i'm working.")
+    async def verify(self, interaction: discord.Interaction):
+
+        guild_id = interaction.guild_id if interaction.guild_id else 0
+        lang, persona = await guild_settings_get(guild_id)
+
+        phrase = get_language(lang, "", "CommandVerifyStatus", persona)
         await interaction.response.send_message(phrase)
 
 
