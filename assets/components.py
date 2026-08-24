@@ -6,7 +6,6 @@ class BannerComponent(discord.ui.LayoutView):
 
         super().__init__()
 
-
         components = [
                 discord.ui.TextDisplay(content = yume_phrase)
         ]

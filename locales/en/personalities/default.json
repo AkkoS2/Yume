@@ -62,6 +62,13 @@
         "",
         ""
     ],
+    "CommandOpenIssue": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
     "CommandReportProblems": [
         "",
         "",
@@ -69,7 +76,21 @@
         "",
         ""
     ],
-    "CommandOpenIssue": [
+    "CommandFeedback": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandConfigYume": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "CommandConfiguredYume": [
         "",
         "",
         "",
